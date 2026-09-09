@@ -1,0 +1,152 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned The Darkroom. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Darkroom",
+      "kicker": "THE ROLL",
+      "lineage": "analog darkroom, developing tank, contact sheet",
+      "thesis": "The phone is a light-tight room: the vault never sees daylight, and the internet never sees the vault.",
+      "palette": ["#0C0B0A", "#C4452D", "#F2E6D0", "#9A9488"],
+      "materials": ["safelight gel", "stainless developing tank", "contact-sheet paper", "wet enamel trays"],
+      "viewport": "Full-bleed dark. A tank-as-phone at left. Contact-sheet headline in a safelight pool. GitHub APK as the print you take out.",
+      "risk": "Reads as photo-hipster nostalgia if the trays are not literally master password, recovery key, and .vault.",
+      "raised": [
+        {
+          "from": "signals-instruments-vu-meter-bridge",
+          "raise": "Ballistic mass: type and safelight settle with overshoot; nothing eases in like a UI fade."
+        },
+        {
+          "from": "design-canon-op-art-textile-repeat",
+          "raise": "Light-trap edge: the scrape-world outside has no seam; the vault is a hard black frame that does not leak."
+        },
+        {
+          "from": "reefs-bioluminescent-nocturnal-plankton-wake-stars",
+          "raise": "Local glow, then dark: pointer only lights what you touch; leaving it, the safelight dies — auto-lock, no residue."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Sneakernet",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "USB sticks, Nearby Share, labeled envelopes",
+      "thesis": "BitVault is one encrypted file you carry, not a product you log into.",
+      "palette": ["#1A1714", "#C4A574", "#E7D7B8", "#2F5D50"],
+      "materials": ["brushed USB-C metal", "heat-shrink labels", "manila envelope", "ballpoint on kraft"],
+      "viewport": "A full-scale labeled .vault object owns the first screen; the phone is the destination, not the hero chrome.",
+      "risk": "Also the direction most runs in this category land on, because the mechanism is the file.",
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-ebru",
+      "label": "The One Lift",
+      "verdict": "competitive",
+      "lineage": "ebru floated pigment, one contact with paper",
+      "thesis": "Recovery key and backup are a single irreversible lift: the only copy there will ever be.",
+      "palette": ["#E7D5B8", "#1F4B6E", "#9B2D2D", "#2C6B4F"],
+      "materials": ["sized paper", "ox-gall bath", "displacing pigment rings", "one-hair comb"],
+      "viewport": "A full-bleed bath; BitVault type is combed into the surface; GitHub is the lift.",
+      "case": "Holds product clarity on irreversibility; loses identification — visitors are not marblers.",
+      "risk": "Reads as a luxury art site unless the lift is named as recovery key and .vault.",
+      "comp": ".impeccable/mocks/decision/challenger-ebru.webp",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ebru-floated-pigment-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/medium-native-ebru-floated-pigment.webp"
+    },
+    {
+      "id": "challenger-civic",
+      "label": "Civic Prospectus",
+      "verdict": "competitive",
+      "lineage": "late-modern civic bureau prospectus",
+      "thesis": "Almost everything is bone-white; the argument lives in two weights of one face and one violet action.",
+      "palette": ["#F7F7FA", "#1B1547", "#6B5CE7", "#7FD8D0"],
+      "materials": ["bone-white plate", "silk light ribbon", "1px grey rules", "lacquered bench"],
+      "viewport": "Sticky 72px bar, 88px headline, ribbon owning the right bleed, GitHub as the only filled button.",
+      "case": "Holds audience identification with premium web they already trust; loses clarity — no-internet and .vault stay polite.",
+      "risk": "Looks like every awarded SaaS prospectus unless the ribbon is the file path, not décor.",
+      "comp": ".impeccable/mocks/decision/challenger-civic.webp",
+      "hero": "https://impeccable.style/worlds/cards/civic-bureau-prospectus-late-modern-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/civic-bureau-prospectus-late-modern.webp"
+    },
+    {
+      "id": "challenger-tensegrity",
+      "label": "Opposing Wraps",
+      "verdict": "competitive",
+      "lineage": "tensegrity column, carbon rods and red cord",
+      "thesis": "Master password and recovery key are opposing wraps: the vault key floats and never touches disk in the clear.",
+      "palette": ["#E8E4DC", "#111111", "#C1121F", "#6B6B6B"],
+      "materials": ["matte carbon rods", "red tension cord", "pale concrete", "node annotations"],
+      "viewport": "A breathing column as the first object; labels name password wrap vs recovery wrap; GitHub at the base plate.",
+      "case": "Holds product clarity on the key model; loses identification — the audience does not live in sculpture studios.",
+      "risk": "Becomes a kinetic-art demo that forgets logins, photos, and the APK.",
+      "comp": ".impeccable/mocks/decision/challenger-tensegrity.webp",
+      "hero": "https://impeccable.style/worlds/cards/kinetic-sculpture-automata-tensegrity-breathing-column-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/kinetic-sculpture-automata-tensegrity-breathing-column.webp"
+    },
+    {
+      "id": "challenger-vu",
+      "label": "Meters at Rest",
+      "verdict": "declined",
+      "lineage": "VU-meter bridge on a recording desk",
+      "thesis": "Cloud products lean into the red together; BitVault’s needles sleep on the left pin — nothing leaving.",
+      "palette": ["#E7D9C4", "#1A1512", "#C1121F", "#5C4033"],
+      "materials": ["ivory meter faces", "walnut desk", "glass over needles", "the only red past zero"],
+      "viewport": "A row of meters as the hero; BitVault’s channel is at rest; GitHub under the bridge.",
+      "case": "Loses both: studio meters are not this audience, and rest vs peak does not name password, recovery, or .vault.",
+      "kept": "Ballistic mass — motion with overshoot, not UI fades.",
+      "risk": "Reads as an audio plugin site.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-vu-meter-bridge-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-vu-meter-bridge.webp"
+    },
+    {
+      "id": "challenger-opart",
+      "label": "Seamless Wave",
+      "verdict": "declined",
+      "lineage": "op-art textile whose repeat disappears",
+      "thesis": "The scrape-world has no edge you can find; the vault is the only hard black frame.",
+      "palette": ["#000000", "#FFFFFF"],
+      "materials": ["matte cloth", "hard black/white with no gray", "engineered wave repeat"],
+      "viewport": "A continuous optical field; BitVault sits in a light-trap window; GitHub cuts the wave.",
+      "case": "Loses both: gallery op-art is not their world, and a seamless field fights a product about edges and one file.",
+      "kept": "Light-trap edge — outside has no seam, the vault does not leak.",
+      "risk": "Becomes an optical toy with no mental model.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-op-art-textile-repeat-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/design-canon-op-art-textile-repeat.webp"
+    },
+    {
+      "id": "challenger-bio",
+      "label": "Wake Then Dark",
+      "verdict": "declined",
+      "lineage": "bioluminescent plankton, wakes that fade",
+      "thesis": "Touch draws light that dies; nothing persists in the water once you leave.",
+      "palette": ["#02040A", "#1CE0FF", "#0A6B8A", "#E8F7FF"],
+      "materials": ["black night water", "electric-blue plankton", "fading cyan traces"],
+      "viewport": "Black field; pointer wakes name the four keys; darkness closes; GitHub is a still dock.",
+      "case": "Loses both: night-sea mood is not identification, and plankton cannot carry .vault or recovery-once.",
+      "kept": "Local glow, then dark — light only where you are, then residue gone.",
+      "risk": "Awwwards particle demo that could sell any night-themed app.",
+      "hero": "https://impeccable.style/worlds/cards/reefs-bioluminescent-nocturnal-plankton-wake-stars-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/reefs-bioluminescent-nocturnal-plankton-wake-stars.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A dark security landing: lock mark, encrypted claim, phone mock, feature grid, store badge — executed at full craft.",
+    "palette": ["#0B1220", "#F8FAFC", "#3B82F6", "#22D3EE"],
+    "materials": ["product photography", "glass phone mock", "clean eight-column grid", "blue signal accent"],
+    "viewport": "Nav, headline plus subcopy, phone screenshot, primary download, logo row of nothing we do not have.",
+    "risk": "Indistinguishable from every other password-manager site by design.",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

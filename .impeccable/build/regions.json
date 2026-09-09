@@ -1,0 +1,94 @@
+{
+  "regions": [
+    {
+      "id": "texture-ground",
+      "kind": "texture",
+      "grid": "A9:A9",
+      "note": "Clean sized-paper cream studio ground with no type, used as the tiled page field"
+    },
+    {
+      "id": "wordmark",
+      "kind": "text",
+      "grid": "A0:B0",
+      "note": "BITVAULT wordmark in bold dark indigo caps"
+    },
+    {
+      "id": "nav-apk",
+      "kind": "control",
+      "grid": "I0:J0",
+      "note": "GitHub mark plus GitHub APK text link"
+    },
+    {
+      "id": "drop-title",
+      "kind": "text",
+      "grid": "A1:C1",
+      "note": "DROP — Master password. small indigo caps"
+    },
+    {
+      "id": "drop-bath",
+      "kind": "plate",
+      "grid": "A2:C7",
+      "note": "Recessed square ebru tray: tan marbled bath, one solid indigo drop at center with concentric pale rings"
+    },
+    {
+      "id": "drop-caption",
+      "kind": "text",
+      "grid": "A8:C8",
+      "note": "Never stored."
+    },
+    {
+      "id": "comb-title",
+      "kind": "text",
+      "grid": "D1:F1",
+      "note": "COMB — Marbled waves. small indigo caps"
+    },
+    {
+      "id": "comb-waves",
+      "kind": "plate",
+      "grid": "D2:G9",
+      "note": "Vertical combed ebru waves in indigo, crimson, and green filling the center tray behind the type, including the lower tray field"
+    },
+    {
+      "id": "comb-headline",
+      "kind": "text",
+      "grid": "D3:F4",
+      "note": "BitVault stays on the phone. large bold type, last two words in green"
+    },
+    {
+      "id": "comb-deck",
+      "kind": "text",
+      "grid": "D6:F6",
+      "note": "No INTERNET permission. Fingerprint is this phone only."
+    },
+    {
+      "id": "lift-title",
+      "kind": "text",
+      "grid": "H1:J1",
+      "note": "LIFT — One file. Restore replaces. small indigo caps"
+    },
+    {
+      "id": "lift-sheet",
+      "kind": "plate",
+      "grid": "H2:J7",
+      "note": "Marbled sized sheet in the lift tray, bottom-left corner peeling up, pale ebru on cream"
+    },
+    {
+      "id": "lift-filename",
+      "kind": "text",
+      "grid": "H4:I4",
+      "note": ".vault in large bold indigo"
+    },
+    {
+      "id": "lift-cta",
+      "kind": "control",
+      "grid": "H6:I7",
+      "note": "Crimson Get the APK button with download glyph"
+    },
+    {
+      "id": "lift-caption",
+      "kind": "text",
+      "grid": "H8:J8",
+      "note": "Restore replaces."
+    }
+  ]
+}

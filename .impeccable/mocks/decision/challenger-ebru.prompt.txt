@@ -1,0 +1,25 @@
+Desktop website first viewport, 16:9 landscape, designed landing-page UI occupying the entire frame. Not a fine-art photograph of marbling, not a poster, not a framed painting, not a canvas on a wall, not a device mockup. A full-bleed browser-window marketing site for BitVault.
+
+STRUCTURE, top to bottom, named regions with scale:
+
+1) PAPER-EDGE NAV — thin horizontal strip along the top, ~8% of viewport height: the sized-paper edge of a sheet resting on a water bath. Left: wordmark BitVault in Prussian blue #1F4B6E as if combed once into wet pigment. Right: sparse text links How it works and Android plus a small GitHub mark, same blue. Cream sized paper #E7D5B8 with a deckle-soft paper edge. Not a glass navbar, not a dark SaaS bar.
+
+2) MARBLED PIGMENT FIELD — remaining ~92% of the viewport is the page ground: traditional Turkish ebru ox-gall bath seen from directly above, wall-to-wall. Concentric displacing pigment rings in Prussian blue #1F4B6E, oxblood #9B2D2D, and pine green #2C6B4F on warm sized-paper cream #E7D5B8. Colours displace; they never mix or muddy. A one-hair comb has drawn a single pass of type through the wet surface. This is the website background AND its typography, not a photo with overlay text.
+
+Headline combed into the marble, large, left-weighted, occupying the left two-thirds, ~40% of viewport height: The key you see once. Subline immediately below, smaller, still combed into the same wet surface: BitVault is a phone-local password manager for Android. No INTERNET permission. The recovery key is shown once. The .vault backup is the only copy you lift.
+
+3) CTA AS THE LIFT — lower right, ~18% of the viewport: a physical moment of pulling the marbled sheet off the bath, a corner of sized paper being lifted with wet pigment still clinging. On that lifted corner, a GitHub-shaped control reading Get the APK in cream on oxblood #9B2D2D. The lift is the primary action. Not a floating rounded SaaS button; the sheet coming off the water is the download.
+
+4) RECOVERY-KEY / .VAULT MOMENT — small, lower left, ~12% of width, a labeled product fact not a decorative swirl: a short paper ticket or comb-line label sitting in the marble with two lines: Recovery key — shown once and .vault — the only copy. Tiny, quiet, readable. Not a fake app screenshot, not a QR code, not a price.
+
+TYPE: letterforms physically combed through wet pigment with a one-hair comb — edges slightly feathered by gall, interiors the cream paper showing through. Fully readable as a landing page. Not digital drop-shadow text, not a font overlay on a photo.
+
+MATERIALS: sized paper, ox-gall water bath, pigment rings that displace, one-hair comb tracks. One-pass surface: no second layer of UI chrome on top of a photo, no glassmorphism, no neumorphism, no stock marble wallpaper.
+
+PALETTE only: #E7D5B8 cream ground, #1F4B6E Prussian blue, #9B2D2D oxblood, #2C6B4F pine green. No gold, no black, no cyan, no neon, no purple.
+
+PRODUCT FACTS ONLY: BitVault, Android, phone-local, no INTERNET permission, recovery key shown once, .vault backup is the only copy, CTA Get the APK. Do not invent prices, ratings, store badges, dates, testimonials, Play Store, iOS, cloud, sync, accounts, or reset by email.
+
+MUST READ AS: a designed website first screen a visitor would land on — navigation, headline, proof, primary download — executed entirely in ebru craft. If it could hang in a gallery as untitled marbling, it failed. If it looks like a SaaS landing with marble wallpaper, it failed. The marble IS the page.
+
+Photoreal craft of water and paper, composition is UI layout. Sharp high-fidelity desktop 1920×1080 framing.
