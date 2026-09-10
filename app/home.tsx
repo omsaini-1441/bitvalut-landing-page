@@ -1,11 +1,10 @@
 "use client";
 
+import { publicEnv } from "@/lib/env";
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const apkHref =
-  process.env.NEXT_PUBLIC_APK_URL ??
-  "https://github.com/omsaini-1441/bitvalut-landing-page/releases";
+const apkHref = publicEnv.apkUrl;
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
