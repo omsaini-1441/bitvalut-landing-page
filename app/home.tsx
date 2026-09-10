@@ -3,8 +3,9 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const githubRepo = "https://github.com/omsaini-1441/bitvalut-landing-page";
-const apkHref = process.env.NEXT_PUBLIC_APK_URL ?? `${githubRepo}/releases`;
+const apkHref =
+  process.env.NEXT_PUBLIC_APK_URL ??
+  "https://github.com/omsaini-1441/bitvalut-landing-page/releases";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
