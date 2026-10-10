@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T17:21:00.000Z",
+  "title": "Design System: BitVault",
+  "extensions": {
+    "colorMeta": {
+      "cobalt": { "role": "primary", "displayName": "Cobalt", "canonical": "#0847c8" },
+      "vermilion": { "role": "secondary", "displayName": "Vermilion", "canonical": "#ba2818" },
+      "stock": { "role": "neutral", "displayName": "Stock", "canonical": "#f7f7f7" },
+      "navy": { "role": "neutral", "displayName": "Navy", "canonical": "#08183d" }
+    },
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Document and button lift." }
+    ],
+    "breakpoints": [
+      { "name": "stack", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Cobalt access action.",
+      "html": "<button class=\"ds-btn-primary\">Get BitVault free</button>",
+      "css": ".ds-btn-primary{background:#0847c8;color:#fff;min-height:3.35rem;padding:0 1.25rem;border:0;font-weight:700;}"
+    },
+    {
+      "name": "Stamp Button",
+      "kind": "button",
+      "refersTo": "button-stamp",
+      "description": "Vermilion claim or danger action.",
+      "html": "<button class=\"ds-btn-stamp\">Claim access</button>",
+      "css": ".ds-btn-stamp{background:#ba2818;color:#fff;min-height:3.35rem;padding:0 1.25rem;border:0;font-weight:700;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Security Document Atelier",
+    "overview": "BitVault’s public surfaces read like anti-counterfeit paper: cotton-white stock, midnight navy fields, cobalt guilloché, and one vermilion stamp.",
+    "keyCharacteristics": [
+      "Square-cornered documents, not rounded product cards",
+      "One cobalt action and one vermilion claim stamp",
+      "Engineered condensed labels for serials and navigation"
+    ],
+    "rules": [
+      { "name": "The Two-Ink Rule", "body": "Cobalt grants access. Vermilion claims or warns. No third accent.", "section": "colors" }
+    ],
+    "dos": [
+      "Do keep the Android vault and the website account visually and verbally separate.",
+      "Do treat the access pass as the conversion object."
+    ],
+    "donts": [
+      "Don't ship rounded SaaS cards, neon cybersecurity, or lock-icon heroes.",
+      "Don't expose the APK URL on public pages.",
+      "Don't call recovery storage zero-knowledge."
+    ]
+  }
+}

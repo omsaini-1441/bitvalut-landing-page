@@ -1,0 +1,712 @@
+{
+  "tool": "comp-diff",
+  "version": 1,
+  "createdAt": "2026-10-10T17:07:24.316Z",
+  "label": "hero",
+  "comp": ".impeccable/mocks/comp-b.jpg",
+  "build": ".impeccable/review/hero-repro.png",
+  "spec": ".impeccable/build/spec.json",
+  "compSize": "1280x720",
+  "buildSize": "1280x720",
+  "align": "top",
+  "overall": 0.7026,
+  "verdict": "drift",
+  "scores": {
+    "overall": 0.7026,
+    "structure": 0.5469,
+    "color": 0.8791,
+    "colorIntersection": 0.8048,
+    "paletteMatch": 0.9191,
+    "detail": 0.645,
+    "detailRaw": 0.6606,
+    "detailAdded": 0.0313,
+    "bands": 0.8683
+  },
+  "palette": {
+    "comp": [
+      {
+        "hex": "#f7f7f7",
+        "coverage": 0.6295
+      },
+      {
+        "hex": "#08183d",
+        "coverage": 0.2997
+      },
+      {
+        "hex": "#c7c8ce",
+        "coverage": 0.0294
+      },
+      {
+        "hex": "#93949a",
+        "coverage": 0.0198
+      },
+      {
+        "hex": "#0f131c",
+        "coverage": 0.0117
+      },
+      {
+        "hex": "#505157",
+        "coverage": 0.0099
+      }
+    ],
+    "build": [
+      {
+        "hex": "#f7f7f8",
+        "coverage": 0.63
+      },
+      {
+        "hex": "#08183a",
+        "coverage": 0.2961
+      },
+      {
+        "hex": "#cbd1d8",
+        "coverage": 0.0283
+      },
+      {
+        "hex": "#a2abb6",
+        "coverage": 0.0193
+      },
+      {
+        "hex": "#0848c8",
+        "coverage": 0.0137
+      },
+      {
+        "hex": "#88a8e8",
+        "coverage": 0.0126
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "nav-rule",
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 0.1,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.6413,
+        "structure": 0.9799,
+        "color": 0.9533,
+        "colorIntersection": 0.9411,
+        "paletteMatch": 0.9599,
+        "detail": 0,
+        "detailRaw": 0.0404,
+        "detailAdded": 0.1875,
+        "bands": 0.4
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 21,
+          "y": 13,
+          "w": 1233,
+          "h": 51
+        },
+        "build": {
+          "x": 15,
+          "y": 48,
+          "w": 667,
+          "h": 24
+        }
+      }
+    },
+    {
+      "id": "wordmark",
+      "x": 0.0094,
+      "y": 0.0083,
+      "w": 0.1594,
+      "h": 0.075,
+      "kind": "text",
+      "score": {
+        "overall": 0.4471,
+        "structure": 0.4516,
+        "color": 0.8853,
+        "colorIntersection": 0.833,
+        "paletteMatch": 0.9135,
+        "detail": 0,
+        "detailRaw": 0.0231,
+        "detailAdded": 0.2188,
+        "bands": 0
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 10,
+          "y": 7,
+          "w": 184,
+          "h": 39
+        },
+        "build": {
+          "x": 3,
+          "y": 42,
+          "w": 200,
+          "h": 12
+        }
+      }
+    },
+    {
+      "id": "nav-links",
+      "x": 0.4422,
+      "y": 0.025,
+      "w": 0.0984,
+      "h": 0.0417,
+      "kind": "text",
+      "score": {
+        "overall": 0.5928,
+        "structure": 0.7251,
+        "color": 0.9208,
+        "colorIntersection": 0.8929,
+        "paletteMatch": 0.9358,
+        "detail": 0,
+        "detailRaw": 0.0013,
+        "detailAdded": 0.0625,
+        "bands": 0
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 10,
+          "y": 17,
+          "w": 106,
+          "h": 17
+        },
+        "build": {
+          "x": 32,
+          "y": 42,
+          "w": 84,
+          "h": 6
+        }
+      }
+    },
+    {
+      "id": "sign-in",
+      "x": 0.8984,
+      "y": 0.0167,
+      "w": 0.0797,
+      "h": 0.0583,
+      "kind": "control",
+      "score": {
+        "overall": 0.6576,
+        "structure": 0.7606,
+        "color": 0.8986,
+        "colorIntersection": 0.8938,
+        "paletteMatch": 0.9011,
+        "detail": 0.0044,
+        "detailRaw": 0.0044,
+        "detailAdded": 0,
+        "bands": 0.4
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 7,
+          "y": 11,
+          "w": 85,
+          "h": 26
+        },
+        "build": null
+      }
+    },
+    {
+      "id": "headline",
+      "x": 0.0281,
+      "y": 0.2,
+      "w": 0.3719,
+      "h": 0.1833,
+      "kind": "text",
+      "score": {
+        "overall": 0.4736,
+        "structure": 0.2475,
+        "color": 0.8954,
+        "colorIntersection": 0.8306,
+        "paletteMatch": 0.9302,
+        "detail": 0.3149,
+        "detailRaw": 0.4139,
+        "detailAdded": 0.1979,
+        "bands": 0.788
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 8,
+          "y": 3,
+          "w": 468,
+          "h": 122
+        },
+        "build": {
+          "x": 5,
+          "y": 27,
+          "w": 423,
+          "h": 105
+        }
+      }
+    },
+    {
+      "id": "hero-deck",
+      "x": 0.0281,
+      "y": 0.4,
+      "w": 0.3187,
+      "h": 0.1,
+      "kind": "text",
+      "score": {
+        "overall": 0.7757,
+        "structure": 0.7496,
+        "color": 0.8644,
+        "colorIntersection": 0.7966,
+        "paletteMatch": 0.901,
+        "detail": 0.6891,
+        "detailRaw": 0.7672,
+        "detailAdded": 0.1563,
+        "bands": 0.8143
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 8,
+          "y": 11,
+          "w": 393,
+          "h": 51
+        },
+        "build": {
+          "x": 3,
+          "y": 11,
+          "w": 377,
+          "h": 53
+        }
+      }
+    },
+    {
+      "id": "primary-cta",
+      "x": 0.0281,
+      "y": 0.5167,
+      "w": 0.1641,
+      "h": 0.0833,
+      "kind": "control",
+      "score": {
+        "overall": 0.6949,
+        "structure": 0.6902,
+        "color": 0.8744,
+        "colorIntersection": 0.7394,
+        "paletteMatch": 0.9471,
+        "detail": 0.3915,
+        "detailRaw": 0.4436,
+        "detailAdded": 0.1042,
+        "bands": 0.4914
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 210,
+          "h": 60
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 210,
+          "h": 60
+        }
+      }
+    },
+    {
+      "id": "secondary-cta",
+      "x": 0.2047,
+      "y": 0.5417,
+      "w": 0.1078,
+      "h": 0.0583,
+      "kind": "control",
+      "score": {
+        "overall": 0.6746,
+        "structure": 0.6545,
+        "color": 0.8833,
+        "colorIntersection": 0.8539,
+        "paletteMatch": 0.8991,
+        "detail": 0.3547,
+        "detailRaw": 0.4172,
+        "detailAdded": 0.125,
+        "bands": 0.5436
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 9,
+          "y": 14,
+          "w": 124,
+          "h": 23
+        },
+        "build": {
+          "x": 14,
+          "y": 21,
+          "w": 121,
+          "h": 19
+        }
+      }
+    },
+    {
+      "id": "certificate-shell",
+      "x": 0.4,
+      "y": 0.1,
+      "w": 0.6,
+      "h": 0.6,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.5675,
+        "structure": 0.3847,
+        "color": 0.8498,
+        "colorIntersection": 0.7443,
+        "paletteMatch": 0.9066,
+        "detail": 0.4912,
+        "detailRaw": 0.5381,
+        "detailAdded": 0.0938,
+        "bands": 0.6509
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 20,
+          "w": 744,
+          "h": 405
+        },
+        "build": {
+          "x": 27,
+          "y": 26,
+          "w": 718,
+          "h": 406
+        }
+      }
+    },
+    {
+      "id": "seal-plate",
+      "x": 0.4,
+      "y": 0.1,
+      "w": 0.4,
+      "h": 0.6,
+      "kind": "plate",
+      "score": {
+        "overall": 0.5111,
+        "structure": 0.4389,
+        "color": 0.8184,
+        "colorIntersection": 0.6988,
+        "paletteMatch": 0.8828,
+        "detail": 0.4186,
+        "detailRaw": 0.4655,
+        "detailAdded": 0.0938,
+        "bands": 0.5667
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 20,
+          "w": 512,
+          "h": 405
+        },
+        "build": {
+          "x": 27,
+          "y": 26,
+          "w": 485,
+          "h": 406
+        }
+      }
+    },
+    {
+      "id": "claim-label",
+      "x": 0.8047,
+      "y": 0.1583,
+      "w": 0.1219,
+      "h": 0.0417,
+      "kind": "text",
+      "score": {
+        "overall": 0.5725,
+        "structure": 0.6184,
+        "color": 0.8562,
+        "colorIntersection": 0.8013,
+        "paletteMatch": 0.8858,
+        "detail": 0.048,
+        "detailRaw": 0.1626,
+        "detailAdded": 0.2292,
+        "bands": 0.42
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 7,
+          "y": 20,
+          "w": 143,
+          "h": 26
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 136,
+          "h": 48
+        }
+      }
+    },
+    {
+      "id": "auth-options",
+      "x": 0.8047,
+      "y": 0.2333,
+      "w": 0.15,
+      "h": 0.0583,
+      "kind": "text",
+      "score": {
+        "overall": 0.59,
+        "structure": 0.6661,
+        "color": 0.8945,
+        "colorIntersection": 0.8516,
+        "paletteMatch": 0.9176,
+        "detail": 0,
+        "detailRaw": 0.1862,
+        "detailAdded": 0.4271,
+        "bands": 0.3333
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 8,
+          "y": 9,
+          "w": 174,
+          "h": 26
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 173,
+          "h": 48
+        }
+      }
+    },
+    {
+      "id": "stub-cta",
+      "x": 0.8047,
+      "y": 0.4,
+      "w": 0.1641,
+      "h": 0.0833,
+      "kind": "control",
+      "score": {
+        "overall": 0.5342,
+        "structure": 0.4454,
+        "color": 0.7718,
+        "colorIntersection": 0.626,
+        "paletteMatch": 0.8502,
+        "detail": 0.3181,
+        "detailRaw": 0.4067,
+        "detailAdded": 0.1771,
+        "bands": 0.5495
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 210,
+          "h": 60
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 210,
+          "h": 60
+        }
+      }
+    },
+    {
+      "id": "serial-block",
+      "x": 0.8047,
+      "y": 0.5417,
+      "w": 0.1594,
+      "h": 0.1167,
+      "kind": "text",
+      "score": {
+        "overall": 0.4437,
+        "structure": 0.4436,
+        "color": 0.6887,
+        "colorIntersection": 0.5892,
+        "paletteMatch": 0.7423,
+        "detail": 0.0982,
+        "detailRaw": 0.1034,
+        "detailAdded": 0.0104,
+        "bands": 0.35
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 8,
+          "y": 8,
+          "w": 188,
+          "h": 67
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 102,
+          "h": 84
+        }
+      }
+    },
+    {
+      "id": "proof-band",
+      "x": 0,
+      "y": 0.7,
+      "w": 1,
+      "h": 0.3,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.6826,
+        "structure": 0.7921,
+        "color": 0.8035,
+        "colorIntersection": 0.6792,
+        "paletteMatch": 0.8704,
+        "detail": 0.488,
+        "detailRaw": 0.4984,
+        "detailAdded": 0.0208,
+        "bands": 0.55
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 184
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 211
+        }
+      }
+    },
+    {
+      "id": "proof-title",
+      "x": 0,
+      "y": 0.8,
+      "w": 0.5,
+      "h": 0.1,
+      "kind": "text",
+      "score": {
+        "overall": 0.4894,
+        "structure": 0.548,
+        "color": 0.8174,
+        "colorIntersection": 0.6929,
+        "paletteMatch": 0.8845,
+        "detail": 0.0737,
+        "detailRaw": 0.1362,
+        "detailAdded": 0.125,
+        "bands": 0
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 52,
+          "y": 0,
+          "w": 501,
+          "h": 72
+        },
+        "build": {
+          "x": 39,
+          "y": 28,
+          "w": 272,
+          "h": 22
+        }
+      }
+    },
+    {
+      "id": "proof-copy",
+      "x": 0,
+      "y": 0.9,
+      "w": 0.5,
+      "h": 0.1,
+      "kind": "text",
+      "score": {
+        "overall": 0.5994,
+        "structure": 0.614,
+        "color": 0.807,
+        "colorIntersection": 0.707,
+        "paletteMatch": 0.8608,
+        "detail": 0.3449,
+        "detailRaw": 0.5012,
+        "detailAdded": 0.3125,
+        "bands": 0.3889
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 52,
+          "y": 0,
+          "w": 423,
+          "h": 40
+        },
+        "build": {
+          "x": 32,
+          "y": 2,
+          "w": 414,
+          "h": 65
+        }
+      }
+    },
+    {
+      "id": "proof-guilloche",
+      "x": 0.5,
+      "y": 0.7,
+      "w": 0.5,
+      "h": 0.3,
+      "kind": "plate",
+      "score": {
+        "overall": 0.7234,
+        "structure": 0.9083,
+        "color": 0.7363,
+        "colorIntersection": 0.5763,
+        "paletteMatch": 0.8225,
+        "detail": 0.5981,
+        "detailRaw": 0.5981,
+        "detailAdded": 0,
+        "bands": 1
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 640,
+          "h": 24
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 640,
+          "h": 25
+        }
+      }
+    }
+  ],
+  "files": {
+    "sideBySide": "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/side-by-side.png",
+    "heatmap": "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/heatmap.png",
+    "regionFiles": [
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/nav-rule.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/wordmark.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/nav-links.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/sign-in.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/headline.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/hero-deck.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/primary-cta.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/secondary-cta.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/certificate-shell.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/seal-plate.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/claim-label.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/auth-options.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/stub-cta.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/serial-block.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/proof-band.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/proof-title.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/proof-copy.png",
+      "C:/Users/omsai/OneDrive/Desktop/Practice/bitvault-landing/.impeccable/review/diff/hero/regions/proof-guilloche.png"
+    ]
+  }
+}

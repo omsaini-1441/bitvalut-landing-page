@@ -1,32 +1,32 @@
 import type { Metadata } from "next";
-import { Titillium_Web, Sunflower, Smooch_Sans } from "next/font/google";
+import { Barlow, Barlow_Condensed, Gurajada } from "next/font/google";
 import "./globals.css";
 
-const titillium = Titillium_Web({
+const body = Barlow({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
   display: "swap",
 });
 
-const sunflower = Sunflower({
+const label = Barlow_Condensed({
   subsets: ["latin"],
-  weight: ["500", "700"],
-  variable: "--font-mark",
+  weight: ["500", "600", "700"],
+  variable: "--font-label",
   display: "swap",
 });
 
-const smooch = Smooch_Sans({
+const display = Gurajada({
   subsets: ["latin"],
-  weight: ["300", "500", "600"],
+  weight: "400",
   variable: "--font-display",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "BitVault — passwords that never leave the phone",
+  title: "BitVault — passwords with nowhere to leak",
   description:
-    "Phone-local Android password manager. No account, no server, no INTERNET permission. You copy one encrypted .vault file to move.",
+    "An Android password manager with no internet permission. Keep logins local, move them in one encrypted vault file, and protect your recovery key.",
 };
 
 export default function RootLayout({
@@ -36,9 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${titillium.variable} ${sunflower.variable} ${smooch.variable} ${titillium.className}`}>
-        {children}
-      </body>
+      <body className={`${body.variable} ${label.variable} ${display.variable} ${body.className}`}>{children}</body>
     </html>
   );
 }

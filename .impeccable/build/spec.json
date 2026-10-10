@@ -1,9 +1,13 @@
 {
   "tool": "comp-spec",
   "version": 1,
-  "createdAt": "2026-09-09T09:46:10.323Z",
-  "comp": ".impeccable/mocks/comp-b.png",
-  "warnings": [],
+  "createdAt": "2026-10-10T16:53:00.677Z",
+  "comp": ".impeccable/mocks/comp-b.jpg",
+  "warnings": [
+    "region certificate-shell: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region proof-band: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region proof-guilloche: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
   "uncoveredInkCells": [],
   "compSize": {
     "width": 1280,
@@ -13,116 +17,136 @@
   "orientation": "landscape",
   "palette": [
     {
-      "hex": "#f6f5ed",
-      "coverage": 0.6357
+      "hex": "#f7f7f7",
+      "coverage": 0.6358
     },
     {
-      "hex": "#dacab2",
-      "coverage": 0.2595
+      "hex": "#08183d",
+      "coverage": 0.3027
     },
     {
-      "hex": "#b9b2ae",
-      "coverage": 0.0395
+      "hex": "#c7c8ce",
+      "coverage": 0.0297
     },
     {
-      "hex": "#334364",
-      "coverage": 0.0384
+      "hex": "#93949a",
+      "coverage": 0.02
     },
     {
-      "hex": "#a58d6b",
-      "coverage": 0.0269
+      "hex": "#0f131c",
+      "coverage": 0.0118
     }
   ],
   "bands": [
     {
-      "y": 0.0278,
-      "strength": 0.2147
-    },
-    {
-      "y": 0.0694,
-      "strength": 0.2677
-    },
-    {
-      "y": 0.1667,
-      "strength": 0.3128
-    },
-    {
-      "y": 0.1944,
-      "strength": 0.3526
+      "y": 0.0556,
+      "strength": 0.2981
     },
     {
       "y": 0.2222,
-      "strength": 0.8468
+      "strength": 0.3839
     },
     {
-      "y": 0.4167,
-      "strength": 0.2086
+      "y": 0.2778,
+      "strength": 0.6219
     },
     {
-      "y": 0.4583,
-      "strength": 0.3303
+      "y": 0.3194,
+      "strength": 0.6141
     },
     {
-      "y": 0.5139,
-      "strength": 0.2536
+      "y": 0.375,
+      "strength": 0.4822
     },
     {
-      "y": 0.5417,
-      "strength": 0.2428
+      "y": 0.4028,
+      "strength": 0.3113
+    },
+    {
+      "y": 0.4722,
+      "strength": 0.4108
+    },
+    {
+      "y": 0.5278,
+      "strength": 0.303
     },
     {
       "y": 0.5972,
-      "strength": 0.2039
+      "strength": 0.2318
     },
     {
-      "y": 0.6389,
-      "strength": 0.2116
+      "y": 0.7361,
+      "strength": 1
+    },
+    {
+      "y": 0.7917,
+      "strength": 0.5179
     },
     {
       "y": 0.8194,
-      "strength": 0.3474
+      "strength": 0.3221
     },
     {
-      "y": 0.9306,
-      "strength": 0.4317
+      "y": 0.875,
+      "strength": 0.384
+    },
+    {
+      "y": 0.9167,
+      "strength": 0.2771
     }
   ],
   "regions": [
     {
-      "id": "texture-ground",
-      "kind": "texture",
-      "note": "Clean sized-paper cream studio ground with no type, used as the tiled page field",
-      "grid": "A9:A9",
+      "id": "nav-rule",
+      "kind": "chrome",
+      "note": "thin navigation strip and bottom rule on white security stock",
+      "grid": "A0:J0",
       "box": {
         "x": 0,
-        "y": 0.9,
-        "w": 0.1,
+        "y": 0,
+        "w": 1,
         "h": 0.1
       },
       "px": {
         "x": 0,
-        "y": 648,
-        "w": 128,
+        "y": 0,
+        "w": 1280,
         "h": 72
       },
-      "aspect": 1.7778,
+      "aspect": 17.7778,
       "palette": [
         {
-          "hex": "#f7f7f2",
-          "coverage": 1
+          "hex": "#f8f8f8",
+          "coverage": 0.9362
+        },
+        {
+          "hex": "#c9c9ca",
+          "coverage": 0.0454
+        },
+        {
+          "hex": "#090d33",
+          "coverage": 0.0133
+        },
+        {
+          "hex": "#ababbb",
+          "coverage": 0.0034
+        },
+        {
+          "hex": "#2f2f3f",
+          "coverage": 0.0018
         }
       ],
       "detail": {
-        "energy": 1.1455
+        "energy": 18.0078
       },
-      "medium": "raster",
-      "plate": "assets/plates/texture-ground.png",
+      "medium": "semantic",
+      "plate": null,
       "text": null
     },
     {
       "id": "wordmark",
       "kind": "text",
-      "note": "BITVAULT wordmark in bold dark indigo caps",
+      "note": "BITVAULT wordmark with small geometric seal",
       "grid": "A0:B0",
       "coverBox": {
         "x": 0,
@@ -132,41 +156,41 @@
       },
       "box": {
         "x": 0.0094,
-        "y": 0.0167,
-        "w": 0.1547,
-        "h": 0.0667
+        "y": 0.0083,
+        "w": 0.1594,
+        "h": 0.075
       },
       "px": {
         "x": 12,
-        "y": 12,
-        "w": 198,
-        "h": 48
+        "y": 6,
+        "w": 204,
+        "h": 54
       },
-      "aspect": 4.125,
+      "aspect": 3.7778,
       "palette": [
         {
-          "hex": "#f8f8f6",
-          "coverage": 0.7186
+          "hex": "#f7f7f8",
+          "coverage": 0.8273
         },
         {
-          "hex": "#0a1539",
-          "coverage": 0.1796
+          "hex": "#0a0e35",
+          "coverage": 0.1086
         },
         {
-          "hex": "#707786",
-          "coverage": 0.0379
+          "hex": "#b3b6c9",
+          "coverage": 0.0337
         },
         {
-          "hex": "#121f2f",
-          "coverage": 0.0369
+          "hex": "#434762",
+          "coverage": 0.0189
         },
         {
-          "hex": "#d2d4e0",
-          "coverage": 0.0269
+          "hex": "#72778f",
+          "coverage": 0.0115
         }
       ],
       "detail": {
-        "energy": 38.7534
+        "energy": 36.8065
       },
       "medium": "semantic",
       "plate": null,
@@ -174,30 +198,105 @@
       "type": {
         "comp": {
           "lines": 1,
-          "glyphs": 8,
-          "capHeightPx": 28.9,
+          "glyphs": 9,
+          "capHeightPx": 20.4,
           "inkIsDark": true,
           "allCaps": true,
-          "advance": 0.6046,
-          "advTall": 0.6046,
+          "advance": 0.6248,
+          "advTall": 0.6248,
           "advX": null,
-          "gap": 0.1727,
+          "gap": 0.294,
           "xRatio": null,
-          "stemW": 0.2122,
-          "contrast": 1.133,
-          "serif": 0.8612,
-          "densTall": 0.6455,
+          "stemW": 0.1985,
+          "contrast": 0.9544,
+          "serif": 0.9987,
+          "densTall": 0.6348,
           "densX": null,
-          "weight": 0.6455
+          "weight": 0.6348
         },
-        "widthClass": "condensed",
+        "widthClass": "normal",
         "weightClass": "bold"
       }
     },
     {
-      "id": "nav-apk",
+      "id": "nav-links",
+      "kind": "text",
+      "note": "How it protects and Recovery navigation links",
+      "grid": "E0:G0",
+      "coverBox": {
+        "x": 0.4,
+        "y": 0,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.4422,
+        "y": 0.025,
+        "w": 0.0984,
+        "h": 0.0417
+      },
+      "px": {
+        "x": 566,
+        "y": 18,
+        "w": 126,
+        "h": 30
+      },
+      "aspect": 4.2,
+      "palette": [
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.8551
+        },
+        {
+          "hex": "#606072",
+          "coverage": 0.0507
+        },
+        {
+          "hex": "#1b1b33",
+          "coverage": 0.0411
+        },
+        {
+          "hex": "#c9c9d8",
+          "coverage": 0.0338
+        },
+        {
+          "hex": "#9a98ac",
+          "coverage": 0.0193
+        }
+      ],
+      "detail": {
+        "energy": 31.8274
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 13,
+          "capHeightPx": 12.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5583,
+          "advTall": 0.4253,
+          "advX": 0.6114,
+          "gap": 0.0532,
+          "xRatio": 0.736,
+          "stemW": 0.1662,
+          "contrast": 0.998,
+          "serif": 0.7256,
+          "densTall": 0.5103,
+          "densX": 0.5529,
+          "weight": 0.5103
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "sign-in",
       "kind": "control",
-      "note": "GitHub mark plus GitHub APK text link",
+      "note": "Sign in control with shield mark",
       "grid": "I0:J0",
       "coverBox": {
         "x": 0.8,
@@ -206,816 +305,454 @@
         "h": 0.1
       },
       "box": {
-        "x": 0.8469,
+        "x": 0.8984,
         "y": 0.0167,
-        "w": 0.1359,
-        "h": 0.0667
+        "w": 0.0797,
+        "h": 0.0583
       },
       "px": {
-        "x": 1084,
+        "x": 1150,
         "y": 12,
-        "w": 174,
-        "h": 48
+        "w": 102,
+        "h": 42
       },
-      "aspect": 3.625,
+      "aspect": 2.4286,
       "palette": [
         {
-          "hex": "#f8f8f6",
-          "coverage": 0.8402
+          "hex": "#f8f8f8",
+          "coverage": 0.8996
         },
         {
-          "hex": "#0a1019",
-          "coverage": 0.067
+          "hex": "#b1b1c0",
+          "coverage": 0.0299
         },
         {
-          "hex": "#b8b9cb",
-          "coverage": 0.038
+          "hex": "#0c0c22",
+          "coverage": 0.0278
         },
         {
-          "hex": "#0e1133",
-          "coverage": 0.0313
-        },
-        {
-          "hex": "#868696",
+          "hex": "#787989",
           "coverage": 0.0235
+        },
+        {
+          "hex": "#363848",
+          "coverage": 0.0192
         }
       ],
       "detail": {
-        "energy": 33.5185
+        "energy": 20.032
       },
       "medium": "semantic",
       "plate": null,
       "text": null
     },
     {
-      "id": "drop-title",
+      "id": "headline",
       "kind": "text",
-      "note": "DROP — Master password. small indigo caps",
-      "grid": "A1:C1",
+      "note": "large two-line headline Passwords with nowhere to leak",
+      "grid": "A2:D3",
       "coverBox": {
         "x": 0,
-        "y": 0.1,
-        "w": 0.3,
-        "h": 0.1
-      },
-      "box": {
-        "x": 0.0281,
-        "y": 0.1583,
-        "w": 0.1734,
-        "h": 0.0417
-      },
-      "px": {
-        "x": 36,
-        "y": 114,
-        "w": 222,
-        "h": 30
-      },
-      "aspect": 7.4,
-      "palette": [
-        {
-          "hex": "#f8f8ed",
-          "coverage": 0.8233
-        },
-        {
-          "hex": "#cac9ca",
-          "coverage": 0.0547
-        },
-        {
-          "hex": "#191a1b",
-          "coverage": 0.0477
-        },
-        {
-          "hex": "#101336",
-          "coverage": 0.0435
-        },
-        {
-          "hex": "#989392",
-          "coverage": 0.0309
-        }
-      ],
-      "detail": {
-        "energy": 51.0083
-      },
-      "medium": "semantic",
-      "plate": null,
-      "text": null,
-      "type": {
-        "comp": {
-          "lines": 1,
-          "glyphs": 19,
-          "capHeightPx": 15.1,
-          "inkIsDark": true,
-          "allCaps": false,
-          "advance": 0.5307,
-          "advTall": 0.7298,
-          "advX": 0.4644,
-          "gap": 0.0995,
-          "xRatio": 0.6514,
-          "stemW": 0.1333,
-          "contrast": 0.9702,
-          "serif": null,
-          "densTall": 0.581,
-          "densX": 0.5438,
-          "weight": 0.581
-        },
-        "widthClass": "condensed",
-        "weightClass": "bold"
-      }
-    },
-    {
-      "id": "drop-bath",
-      "kind": "plate",
-      "note": "Recessed square ebru tray: tan marbled bath, one solid indigo drop at center with concentric pale rings",
-      "grid": "A2:C7",
-      "box": {
-        "x": 0,
-        "y": 0.2,
-        "w": 0.3,
-        "h": 0.6
-      },
-      "px": {
-        "x": 0,
-        "y": 144,
-        "w": 384,
-        "h": 432
-      },
-      "aspect": 0.8889,
-      "palette": [
-        {
-          "hex": "#dccab0",
-          "coverage": 0.7057
-        },
-        {
-          "hex": "#f7f5ee",
-          "coverage": 0.1194
-        },
-        {
-          "hex": "#ac9371",
-          "coverage": 0.0991
-        },
-        {
-          "hex": "#aea79f",
-          "coverage": 0.0456
-        },
-        {
-          "hex": "#0d2851",
-          "coverage": 0.0303
-        }
-      ],
-      "detail": {
-        "energy": 14.3741
-      },
-      "medium": "raster",
-      "plate": "assets/plates/drop-bath.png",
-      "text": null
-    },
-    {
-      "id": "drop-caption",
-      "kind": "text",
-      "note": "Never stored.",
-      "grid": "A8:C8",
-      "coverBox": {
-        "x": 0,
-        "y": 0.8,
-        "w": 0.3,
-        "h": 0.1
-      },
-      "box": {
-        "x": 0.0281,
-        "y": 0.85,
-        "w": 0.0891,
-        "h": 0.0417
-      },
-      "px": {
-        "x": 36,
-        "y": 612,
-        "w": 114,
-        "h": 30
-      },
-      "aspect": 3.8,
-      "palette": [
-        {
-          "hex": "#f8f8ec",
-          "coverage": 0.8395
-        },
-        {
-          "hex": "#555352",
-          "coverage": 0.05
-        },
-        {
-          "hex": "#ceccc7",
-          "coverage": 0.0421
-        },
-        {
-          "hex": "#191917",
-          "coverage": 0.0395
-        },
-        {
-          "hex": "#8f8e89",
-          "coverage": 0.0289
-        }
-      ],
-      "detail": {
-        "energy": 30.5853
-      },
-      "medium": "semantic",
-      "plate": null,
-      "text": null,
-      "type": {
-        "comp": {
-          "lines": 1,
-          "glyphs": 11,
-          "capHeightPx": 15,
-          "inkIsDark": true,
-          "allCaps": false,
-          "advance": 0.5339,
-          "advTall": 0.5339,
-          "advX": 0.5172,
-          "gap": 0.0667,
-          "xRatio": 0.7163,
-          "stemW": 0.14,
-          "contrast": 0.9501,
-          "serif": null,
-          "densTall": 0.5362,
-          "densX": 0.5692,
-          "weight": 0.5362
-        },
-        "widthClass": "condensed",
-        "weightClass": "medium"
-      }
-    },
-    {
-      "id": "comb-title",
-      "kind": "text",
-      "note": "COMB — Marbled waves. small indigo caps",
-      "grid": "D1:F1",
-      "coverBox": {
-        "x": 0.3,
-        "y": 0.1,
-        "w": 0.3,
-        "h": 0.1
-      },
-      "box": {
-        "x": 0.3234,
-        "y": 0.1583,
-        "w": 0.1688,
-        "h": 0.0417
-      },
-      "px": {
-        "x": 414,
-        "y": 114,
-        "w": 216,
-        "h": 30
-      },
-      "aspect": 7.2,
-      "palette": [
-        {
-          "hex": "#f8f7ec",
-          "coverage": 0.8417
-        },
-        {
-          "hex": "#c4c3c1",
-          "coverage": 0.0504
-        },
-        {
-          "hex": "#101132",
-          "coverage": 0.0489
-        },
-        {
-          "hex": "#13151b",
-          "coverage": 0.0345
-        },
-        {
-          "hex": "#424144",
-          "coverage": 0.0245
-        }
-      ],
-      "detail": {
-        "energy": 51.4427
-      },
-      "medium": "semantic",
-      "plate": null,
-      "text": null,
-      "type": {
-        "comp": {
-          "lines": 1,
-          "glyphs": 17,
-          "capHeightPx": 15.1,
-          "inkIsDark": true,
-          "allCaps": false,
-          "advance": 0.4977,
-          "advTall": 0.7465,
-          "advX": 0.4645,
-          "gap": 0.0995,
-          "xRatio": 0.6523,
-          "stemW": 0.1354,
-          "contrast": 0.9466,
-          "serif": 0.5472,
-          "densTall": 0.5452,
-          "densX": 0.5702,
-          "weight": 0.5452
-        },
-        "widthClass": "condensed",
-        "weightClass": "medium"
-      }
-    },
-    {
-      "id": "comb-waves",
-      "kind": "plate",
-      "note": "Vertical combed ebru waves in indigo, crimson, and green filling the center tray behind the type, including the lower tray field",
-      "grid": "D2:G9",
-      "box": {
-        "x": 0.3,
         "y": 0.2,
         "w": 0.4,
-        "h": 0.8
-      },
-      "px": {
-        "x": 384,
-        "y": 144,
-        "w": 512,
-        "h": 576
-      },
-      "aspect": 0.8889,
-      "palette": [
-        {
-          "hex": "#f7f5ec",
-          "coverage": 0.6152
-        },
-        {
-          "hex": "#d7cbc0",
-          "coverage": 0.1512
-        },
-        {
-          "hex": "#324164",
-          "coverage": 0.1154
-        },
-        {
-          "hex": "#953f3d",
-          "coverage": 0.0751
-        },
-        {
-          "hex": "#495e50",
-          "coverage": 0.0432
-        }
-      ],
-      "detail": {
-        "energy": 43.6295
-      },
-      "medium": "raster",
-      "plate": "assets/plates/comb-waves.png",
-      "text": null
-    },
-    {
-      "id": "comb-headline",
-      "kind": "text",
-      "note": "BitVault stays on the phone. large bold type, last two words in green",
-      "grid": "D3:F4",
-      "coverBox": {
-        "x": 0.3,
-        "y": 0.3,
-        "w": 0.3,
         "h": 0.2
       },
       "box": {
-        "x": 0.3281,
-        "y": 0.3,
-        "w": 0.2719,
-        "h": 0.2
+        "x": 0.0281,
+        "y": 0.2,
+        "w": 0.3719,
+        "h": 0.1833
       },
       "px": {
-        "x": 420,
-        "y": 216,
-        "w": 348,
-        "h": 144
+        "x": 36,
+        "y": 144,
+        "w": 476,
+        "h": 132
       },
-      "aspect": 2.4167,
+      "aspect": 3.6061,
       "palette": [
         {
-          "hex": "#f6f4e8",
-          "coverage": 0.5412
+          "hex": "#f7f8f8",
+          "coverage": 0.68
         },
         {
-          "hex": "#091736",
-          "coverage": 0.1817
+          "hex": "#091337",
+          "coverage": 0.2666
         },
         {
-          "hex": "#d6c9c2",
-          "coverage": 0.1281
+          "hex": "#a4a8b9",
+          "coverage": 0.0278
         },
         {
-          "hex": "#9f4a48",
-          "coverage": 0.0782
+          "hex": "#0b1323",
+          "coverage": 0.0133
         },
         {
-          "hex": "#3f4b65",
-          "coverage": 0.0707
+          "hex": "#71778b",
+          "coverage": 0.0123
         }
       ],
       "detail": {
-        "energy": 54.1275
+        "energy": 80.0828
       },
       "medium": "semantic",
       "plate": null,
       "text": null,
       "type": {
         "comp": {
-          "lines": 1,
-          "glyphs": 5,
-          "capHeightPx": 141,
+          "lines": 2,
+          "glyphs": 26,
+          "capHeightPx": 51.1,
           "inkIsDark": true,
           "allCaps": false,
-          "advance": 0.3403,
-          "advTall": 0.2978,
-          "advX": 0.4821,
-          "gap": 0.0319,
-          "xRatio": 0.7518,
-          "stemW": 0.0614,
-          "contrast": 1.1334,
-          "serif": null,
-          "densTall": 0.3396,
-          "densX": 0.435,
-          "weight": 0.3396
+          "advance": 0.5877,
+          "advTall": 0.5875,
+          "advX": 0.6073,
+          "gap": 0.0783,
+          "xRatio": 0.7064,
+          "stemW": 0.1836,
+          "contrast": 1.1011,
+          "serif": 1.0055,
+          "densTall": 0.569,
+          "densX": 0.6175,
+          "weight": 0.569
         },
-        "widthClass": "condensed",
-        "weightClass": "light",
+        "widthClass": "normal",
+        "weightClass": "bold",
         "chosen": {
-          "family": "Smooch Sans",
-          "weight": 300,
-          "fontSizePx": 201,
+          "family": "Gurajada",
+          "weight": 400,
+          "fontSizePx": 73,
           "source": "catalog",
           "estimatedSize": true,
-          "stamp": "f922d0b6c8be"
+          "stamp": "82fb62a68d17"
         }
       }
     },
     {
-      "id": "comb-deck",
+      "id": "hero-deck",
       "kind": "text",
-      "note": "No INTERNET permission. Fingerprint is this phone only.",
-      "grid": "D6:F6",
+      "note": "two-line Android phone and no internet permission explanation",
+      "grid": "A4:D4",
       "coverBox": {
-        "x": 0.3,
-        "y": 0.6,
-        "w": 0.3,
+        "x": 0,
+        "y": 0.4,
+        "w": 0.4,
         "h": 0.1
       },
       "box": {
-        "x": 0.5156,
-        "y": 0.6,
-        "w": 0.0844,
+        "x": 0.0281,
+        "y": 0.4,
+        "w": 0.3187,
         "h": 0.1
       },
       "px": {
-        "x": 660,
-        "y": 432,
-        "w": 108,
+        "x": 36,
+        "y": 288,
+        "w": 408,
         "h": 72
       },
-      "aspect": 1.5,
+      "aspect": 5.6667,
       "palette": [
         {
-          "hex": "#e6dbcf",
-          "coverage": 0.414
+          "hex": "#f7f7f7",
+          "coverage": 0.8823
         },
         {
-          "hex": "#374668",
-          "coverage": 0.2169
+          "hex": "#bcbcbf",
+          "coverage": 0.0329
         },
         {
-          "hex": "#beb8b0",
-          "coverage": 0.1667
-        },
-        {
-          "hex": "#656d86",
-          "coverage": 0.1164
-        },
-        {
-          "hex": "#76816e",
-          "coverage": 0.086
-        }
-      ],
-      "detail": {
-        "energy": 16.5565
-      },
-      "medium": "semantic",
-      "plate": null,
-      "text": null,
-      "type": {
-        "comp": {
-          "lines": 1,
-          "glyphs": 3,
-          "capHeightPx": 70.6,
-          "inkIsDark": true,
-          "allCaps": false,
-          "advance": 0.2833,
-          "advTall": 0.2833,
-          "advX": null,
-          "gap": 0.0921,
-          "xRatio": 0.4445,
-          "stemW": 0.0453,
-          "contrast": 0.8606,
-          "serif": null,
-          "densTall": 0.4534,
-          "densX": null,
-          "weight": 0.4534
-        },
-        "widthClass": "compressed",
-        "weightClass": "regular"
-      }
-    },
-    {
-      "id": "lift-title",
-      "kind": "text",
-      "note": "LIFT — One file. Restore replaces. small indigo caps",
-      "grid": "H1:J1",
-      "coverBox": {
-        "x": 0.7,
-        "y": 0.1,
-        "w": 0.3,
-        "h": 0.1
-      },
-      "box": {
-        "x": 0.7,
-        "y": 0.1583,
-        "w": 0.2109,
-        "h": 0.0417
-      },
-      "px": {
-        "x": 896,
-        "y": 114,
-        "w": 270,
-        "h": 30
-      },
-      "aspect": 9,
-      "palette": [
-        {
-          "hex": "#f8f8ec",
-          "coverage": 0.8567
-        },
-        {
-          "hex": "#cccbc9",
-          "coverage": 0.0493
-        },
-        {
-          "hex": "#171514",
-          "coverage": 0.0424
-        },
-        {
-          "hex": "#979695",
-          "coverage": 0.0333
-        },
-        {
-          "hex": "#252644",
-          "coverage": 0.0183
-        }
-      ],
-      "detail": {
-        "energy": 60.5877
-      },
-      "medium": "semantic",
-      "plate": null,
-      "text": null,
-      "type": {
-        "comp": {
-          "lines": 1,
-          "glyphs": 25,
-          "capHeightPx": 15.1,
-          "inkIsDark": true,
-          "allCaps": false,
-          "advance": 0.4636,
-          "advTall": 0.3311,
-          "advX": 0.4636,
-          "gap": 0.0993,
-          "xRatio": 0.6498,
-          "stemW": 0.1331,
-          "contrast": 1.0037,
-          "serif": 0.74,
-          "densTall": 0.6046,
-          "densX": 0.5763,
-          "weight": 0.6046
-        },
-        "widthClass": "condensed",
-        "weightClass": "bold"
-      }
-    },
-    {
-      "id": "lift-sheet",
-      "kind": "plate",
-      "note": "Marbled sized sheet in the lift tray, bottom-left corner peeling up, pale ebru on cream",
-      "grid": "H2:J7",
-      "box": {
-        "x": 0.7,
-        "y": 0.2,
-        "w": 0.3,
-        "h": 0.6
-      },
-      "px": {
-        "x": 896,
-        "y": 144,
-        "w": 384,
-        "h": 432
-      },
-      "aspect": 0.8889,
-      "palette": [
-        {
-          "hex": "#ebe2d7",
-          "coverage": 0.6622
-        },
-        {
-          "hex": "#d2c1a6",
-          "coverage": 0.1777
-        },
-        {
-          "hex": "#735b3b",
-          "coverage": 0.0627
-        },
-        {
-          "hex": "#af1822",
-          "coverage": 0.0533
-        },
-        {
-          "hex": "#9e8769",
-          "coverage": 0.0442
-        }
-      ],
-      "detail": {
-        "energy": 19.7402
-      },
-      "medium": "raster",
-      "plate": "assets/plates/lift-sheet.png",
-      "text": null
-    },
-    {
-      "id": "lift-filename",
-      "kind": "text",
-      "note": ".vault in large bold indigo",
-      "grid": "H4:I4",
-      "coverBox": {
-        "x": 0.7,
-        "y": 0.4,
-        "w": 0.2,
-        "h": 0.1
-      },
-      "box": {
-        "x": 0.7516,
-        "y": 0.425,
-        "w": 0.1359,
-        "h": 0.075
-      },
-      "px": {
-        "x": 962,
-        "y": 306,
-        "w": 174,
-        "h": 54
-      },
-      "aspect": 3.2222,
-      "palette": [
-        {
-          "hex": "#f4eae4",
-          "coverage": 0.7115
-        },
-        {
-          "hex": "#09173a",
-          "coverage": 0.2202
-        },
-        {
-          "hex": "#090e1e",
+          "hex": "#373739",
           "coverage": 0.0317
         },
         {
-          "hex": "#878a96",
-          "coverage": 0.0298
+          "hex": "#121215",
+          "coverage": 0.0314
         },
         {
-          "hex": "#c1bfc3",
-          "coverage": 0.0067
+          "hex": "#88898b",
+          "coverage": 0.0217
         }
       ],
       "detail": {
-        "energy": 25.7494
+        "energy": 58.103
       },
       "medium": "semantic",
       "plate": null,
       "text": null,
       "type": {
         "comp": {
-          "lines": 1,
-          "glyphs": 7,
-          "capHeightPx": 43.6,
+          "lines": 2,
+          "glyphs": 73,
+          "capHeightPx": 15.1,
           "inkIsDark": true,
           "allCaps": false,
-          "advance": 0.4129,
-          "advTall": 0.2065,
-          "advX": 0.4129,
-          "gap": 0.1376,
-          "xRatio": 0.6225,
-          "stemW": 0.2243,
-          "contrast": 1.2353,
-          "serif": 0.9928,
-          "densTall": 0.9877,
-          "densX": 0.6496,
-          "weight": 0.9877
+          "advance": 0.5277,
+          "advTall": 0.3958,
+          "advX": 0.5291,
+          "gap": 0.0992,
+          "xRatio": 0.7161,
+          "stemW": 0.1422,
+          "contrast": 0.9406,
+          "serif": 0.5332,
+          "densTall": 0.5102,
+          "densX": 0.5519,
+          "weight": 0.5102
         },
-        "widthClass": "compressed",
-        "weightClass": "black"
+        "widthClass": "condensed",
+        "weightClass": "medium"
       }
     },
     {
-      "id": "lift-cta",
+      "id": "primary-cta",
       "kind": "control",
-      "note": "Crimson Get the APK button with download glyph",
-      "grid": "H6:I7",
-      "box": {
-        "x": 0.7,
-        "y": 0.6,
+      "note": "cobalt Get BitVault free button",
+      "grid": "A5:B5",
+      "coverBox": {
+        "x": 0,
+        "y": 0.5,
         "w": 0.2,
-        "h": 0.2
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0281,
+        "y": 0.5167,
+        "w": 0.1641,
+        "h": 0.0833
       },
       "px": {
-        "x": 896,
-        "y": 432,
-        "w": 256,
-        "h": 144
+        "x": 36,
+        "y": 372,
+        "w": 210,
+        "h": 60
+      },
+      "aspect": 3.5,
+      "palette": [
+        {
+          "hex": "#0847c8",
+          "coverage": 0.6625
+        },
+        {
+          "hex": "#f4f7f8",
+          "coverage": 0.2478
+        },
+        {
+          "hex": "#9cb7ed",
+          "coverage": 0.0608
+        },
+        {
+          "hex": "#bfe6f8",
+          "coverage": 0.0148
+        },
+        {
+          "hex": "#7398e2",
+          "coverage": 0.0141
+        }
+      ],
+      "detail": {
+        "energy": 26.5943
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "secondary-cta",
+      "kind": "control",
+      "note": "underlined See how it works link",
+      "grid": "C5:D5",
+      "coverBox": {
+        "x": 0.2,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.2047,
+        "y": 0.5417,
+        "w": 0.1078,
+        "h": 0.0583
+      },
+      "px": {
+        "x": 262,
+        "y": 390,
+        "w": 138,
+        "h": 42
+      },
+      "aspect": 3.2857,
+      "palette": [
+        {
+          "hex": "#f7f8f8",
+          "coverage": 0.8198
+        },
+        {
+          "hex": "#121947",
+          "coverage": 0.075
+        },
+        {
+          "hex": "#0c0f22",
+          "coverage": 0.0463
+        },
+        {
+          "hex": "#b0b1bf",
+          "coverage": 0.0335
+        },
+        {
+          "hex": "#595c6f",
+          "coverage": 0.0255
+        }
+      ],
+      "detail": {
+        "energy": 37.5639
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "certificate-shell",
+      "kind": "chrome",
+      "note": "white access-pass shell with fine navy rule and perforated divider",
+      "grid": "E1:J6",
+      "container": true,
+      "box": {
+        "x": 0.4,
+        "y": 0.1,
+        "w": 0.6,
+        "h": 0.6
+      },
+      "px": {
+        "x": 512,
+        "y": 72,
+        "w": 768,
+        "h": 432
       },
       "aspect": 1.7778,
       "palette": [
         {
-          "hex": "#ebe4d8",
-          "coverage": 0.4051
+          "hex": "#f5f5f6",
+          "coverage": 0.8362
         },
         {
-          "hex": "#d0bca0",
-          "coverage": 0.2381
+          "hex": "#aeaeb2",
+          "coverage": 0.0533
         },
         {
-          "hex": "#785e3c",
-          "coverage": 0.1675
+          "hex": "#c0cbe9",
+          "coverage": 0.0456
         },
         {
-          "hex": "#ac181f",
-          "coverage": 0.1121
+          "hex": "#6582c1",
+          "coverage": 0.0376
         },
         {
-          "hex": "#a18b6c",
-          "coverage": 0.0773
+          "hex": "#ba2818",
+          "coverage": 0.0273
         }
       ],
       "detail": {
-        "energy": 20.2001
+        "energy": 30.1378
       },
       "medium": "semantic",
       "plate": null,
       "text": null
     },
     {
-      "id": "lift-caption",
-      "kind": "text",
-      "note": "Restore replaces.",
-      "grid": "H8:J8",
-      "coverBox": {
-        "x": 0.7,
-        "y": 0.8,
-        "w": 0.3,
-        "h": 0.1
-      },
+      "id": "seal-plate",
+      "kind": "plate",
+      "note": "engraved metallic B seal carried by cobalt guilloche waves and manifest verification stamp",
+      "grid": "E1:H6",
       "box": {
-        "x": 0.7,
-        "y": 0.85,
-        "w": 0.1078,
-        "h": 0.05
+        "x": 0.4,
+        "y": 0.1,
+        "w": 0.4,
+        "h": 0.6
       },
       "px": {
-        "x": 896,
-        "y": 612,
-        "w": 138,
-        "h": 36
+        "x": 512,
+        "y": 72,
+        "w": 512,
+        "h": 432
       },
-      "aspect": 3.8333,
+      "aspect": 1.1852,
       "palette": [
         {
-          "hex": "#f7f7eb",
-          "coverage": 0.8696
+          "hex": "#f4f5f7",
+          "coverage": 0.7757
         },
         {
-          "hex": "#504f4b",
-          "coverage": 0.0525
+          "hex": "#bfcbe9",
+          "coverage": 0.0698
         },
         {
-          "hex": "#b2b1ae",
-          "coverage": 0.0453
+          "hex": "#949499",
+          "coverage": 0.061
         },
         {
-          "hex": "#22211e",
-          "coverage": 0.0236
+          "hex": "#6582c2",
+          "coverage": 0.0575
         },
         {
-          "hex": "#827e7e",
-          "coverage": 0.0091
+          "hex": "#91ace0",
+          "coverage": 0.0359
         }
       ],
       "detail": {
-        "energy": 32.3933
+        "energy": 32.5977
+      },
+      "medium": "raster",
+      "plate": "assets/plates/seal-plate.png",
+      "text": null
+    },
+    {
+      "id": "claim-label",
+      "kind": "text",
+      "note": "CLAIM FREE ACCESS label with short vermilion rule",
+      "grid": "I1:J1",
+      "coverBox": {
+        "x": 0.8,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.8047,
+        "y": 0.1583,
+        "w": 0.1219,
+        "h": 0.0417
+      },
+      "px": {
+        "x": 1030,
+        "y": 114,
+        "w": 156,
+        "h": 30
+      },
+      "aspect": 5.2,
+      "palette": [
+        {
+          "hex": "#f7f7f6",
+          "coverage": 0.8304
+        },
+        {
+          "hex": "#0f0f23",
+          "coverage": 0.0473
+        },
+        {
+          "hex": "#494a5e",
+          "coverage": 0.0434
+        },
+        {
+          "hex": "#7a7a88",
+          "coverage": 0.0414
+        },
+        {
+          "hex": "#c1c1d1",
+          "coverage": 0.0375
+        }
+      ],
+      "detail": {
+        "energy": 41.8471
       },
       "medium": "semantic",
       "plate": null,
@@ -1024,24 +761,440 @@
         "comp": {
           "lines": 1,
           "glyphs": 15,
-          "capHeightPx": 14.9,
+          "capHeightPx": 11.1,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.632,
+          "advTall": 0.632,
+          "advX": null,
+          "gap": 0.1806,
+          "xRatio": null,
+          "stemW": 0.1913,
+          "contrast": 1.0049,
+          "serif": 0.3013,
+          "densTall": 0.5474,
+          "densX": null,
+          "weight": 0.5474
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "auth-options",
+      "kind": "text",
+      "note": "Continue with Google and or with email choices",
+      "grid": "I2:J3",
+      "coverBox": {
+        "x": 0.8,
+        "y": 0.2,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "box": {
+        "x": 0.8047,
+        "y": 0.2333,
+        "w": 0.15,
+        "h": 0.0583
+      },
+      "px": {
+        "x": 1030,
+        "y": 168,
+        "w": 192,
+        "h": 42
+      },
+      "aspect": 4.5714,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.9001
+        },
+        {
+          "hex": "#151516",
+          "coverage": 0.047
+        },
+        {
+          "hex": "#c6c7c8",
+          "coverage": 0.0212
+        },
+        {
+          "hex": "#5c5c5d",
+          "coverage": 0.02
+        },
+        {
+          "hex": "#a0a0a0",
+          "coverage": 0.0118
+        }
+      ],
+      "detail": {
+        "energy": 31.8804
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 19,
+          "capHeightPx": 12.3,
           "inkIsDark": true,
           "allCaps": false,
-          "advance": 0.502,
-          "advTall": 0.3682,
-          "advX": 0.502,
-          "gap": 0.0669,
-          "xRatio": 0.7167,
-          "stemW": 0.1405,
-          "contrast": 0.9636,
-          "serif": null,
-          "densTall": 0.5557,
-          "densX": 0.5773,
-          "weight": 0.5557
+          "advance": 0.5487,
+          "advTall": 0.3861,
+          "advX": 0.569,
+          "gap": 0.0813,
+          "xRatio": 0.678,
+          "stemW": 0.1636,
+          "contrast": 0.9219,
+          "serif": 0.6029,
+          "densTall": 0.5164,
+          "densX": 0.5979,
+          "weight": 0.5164
         },
         "widthClass": "condensed",
         "weightClass": "medium"
       }
+    },
+    {
+      "id": "stub-cta",
+      "kind": "control",
+      "note": "vermilion GET BITVAULT FREE action",
+      "grid": "I4:J4",
+      "coverBox": {
+        "x": 0.8,
+        "y": 0.4,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.8047,
+        "y": 0.4,
+        "w": 0.1641,
+        "h": 0.0833
+      },
+      "px": {
+        "x": 1030,
+        "y": 288,
+        "w": 210,
+        "h": 60
+      },
+      "aspect": 3.5,
+      "palette": [
+        {
+          "hex": "#ba2818",
+          "coverage": 0.6607
+        },
+        {
+          "hex": "#f6efed",
+          "coverage": 0.2037
+        },
+        {
+          "hex": "#98251a",
+          "coverage": 0.0652
+        },
+        {
+          "hex": "#d4b5ab",
+          "coverage": 0.0526
+        },
+        {
+          "hex": "#ab4d47",
+          "coverage": 0.0178
+        }
+      ],
+      "detail": {
+        "energy": 25.4636
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "serial-block",
+      "kind": "text",
+      "note": "serial BV-000001 and barcode block",
+      "grid": "I5:J6",
+      "coverBox": {
+        "x": 0.8,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "box": {
+        "x": 0.8047,
+        "y": 0.5417,
+        "w": 0.1594,
+        "h": 0.1167
+      },
+      "px": {
+        "x": 1030,
+        "y": 390,
+        "w": 204,
+        "h": 84
+      },
+      "aspect": 2.4286,
+      "palette": [
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.7204
+        },
+        {
+          "hex": "#0a0a0b",
+          "coverage": 0.1018
+        },
+        {
+          "hex": "#b0b1b2",
+          "coverage": 0.0765
+        },
+        {
+          "hex": "#353636",
+          "coverage": 0.07
+        },
+        {
+          "hex": "#808182",
+          "coverage": 0.0313
+        }
+      ],
+      "detail": {
+        "energy": 62.207
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-10-10T16:53:09.324Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "proof-band",
+      "kind": "chrome",
+      "note": "deep navy transition band",
+      "grid": "A7:J9",
+      "container": true,
+      "box": {
+        "x": 0,
+        "y": 0.7,
+        "w": 1,
+        "h": 0.3
+      },
+      "px": {
+        "x": 0,
+        "y": 504,
+        "w": 1280,
+        "h": 216
+      },
+      "aspect": 5.9259,
+      "palette": [
+        {
+          "hex": "#08183e",
+          "coverage": 0.8414
+        },
+        {
+          "hex": "#f6f7f7",
+          "coverage": 0.1322
+        },
+        {
+          "hex": "#bec1ca",
+          "coverage": 0.0119
+        },
+        {
+          "hex": "#0a1525",
+          "coverage": 0.0083
+        },
+        {
+          "hex": "#394359",
+          "coverage": 0.0061
+        }
+      ],
+      "detail": {
+        "energy": 32.7719
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "proof-title",
+      "kind": "text",
+      "note": "large white statement Your vault is not an account",
+      "grid": "A8:E8",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.5,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 576,
+        "w": 640,
+        "h": 72
+      },
+      "aspect": 8.8889,
+      "palette": [
+        {
+          "hex": "#081739",
+          "coverage": 0.8392
+        },
+        {
+          "hex": "#f4f5f7",
+          "coverage": 0.1075
+        },
+        {
+          "hex": "#323a50",
+          "coverage": 0.0245
+        },
+        {
+          "hex": "#60657a",
+          "coverage": 0.0163
+        },
+        {
+          "hex": "#9299ad",
+          "coverage": 0.0125
+        }
+      ],
+      "detail": {
+        "energy": 60.0873
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 70,
+          "capHeightPx": 16.2,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5455,
+          "advTall": 0.5455,
+          "advX": 0.5455,
+          "gap": 0.1364,
+          "xRatio": 0.5031,
+          "stemW": 0.1299,
+          "contrast": 0.9015,
+          "serif": 0.493,
+          "densTall": 0.6881,
+          "densX": 0.511,
+          "weight": 0.6881
+        },
+        "widthClass": "condensed",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "proof-copy",
+      "kind": "text",
+      "note": "local Android vault and optional web recovery account explanation",
+      "grid": "A9:E9",
+      "box": {
+        "x": 0,
+        "y": 0.9,
+        "w": 0.5,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 648,
+        "w": 640,
+        "h": 72
+      },
+      "aspect": 8.8889,
+      "palette": [
+        {
+          "hex": "#08173b",
+          "coverage": 0.9055
+        },
+        {
+          "hex": "#eff2f6",
+          "coverage": 0.0438
+        },
+        {
+          "hex": "#091020",
+          "coverage": 0.0221
+        },
+        {
+          "hex": "#b3b7ca",
+          "coverage": 0.0155
+        },
+        {
+          "hex": "#565a70",
+          "coverage": 0.0132
+        }
+      ],
+      "detail": {
+        "energy": 28.8459
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 51,
+          "capHeightPx": 9.2,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.7571,
+          "advTall": 0.7571,
+          "advX": null,
+          "gap": 0.1442,
+          "xRatio": null,
+          "stemW": 0.2387,
+          "contrast": 1.1869,
+          "serif": 0.1368,
+          "densTall": 0.6049,
+          "densX": null,
+          "weight": 0.6049
+        },
+        "widthClass": "normal",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "proof-guilloche",
+      "kind": "plate",
+      "note": "subtle cobalt guilloche line field intentionally cropped by the navy band",
+      "grid": "F7:J9",
+      "bleed": true,
+      "box": {
+        "x": 0.5,
+        "y": 0.7,
+        "w": 0.5,
+        "h": 0.3
+      },
+      "px": {
+        "x": 640,
+        "y": 504,
+        "w": 640,
+        "h": 216
+      },
+      "aspect": 2.963,
+      "palette": [
+        {
+          "hex": "#081841",
+          "coverage": 0.8877
+        },
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.0978
+        },
+        {
+          "hex": "#bcbfc3",
+          "coverage": 0.0132
+        },
+        {
+          "hex": "#081828",
+          "coverage": 0.0013
+        }
+      ],
+      "detail": {
+        "energy": 9.0935
+      },
+      "medium": "raster",
+      "plate": "assets/plates/proof-guilloche.png",
+      "text": null
     }
   ]
 }

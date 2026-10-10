@@ -12,7 +12,7 @@ Next.js
 
 ## Users
 
-Primary visitors are Android users who want passwords off the cloud — no account, no sync — and are deciding whether BitVault is that tool.
+Primary visitors are Android users who want passwords off the cloud and are deciding whether BitVault is that tool. The Android app has no account or sync; the website now offers a separate account for gated downloads and optional recovery-key escrow.
 
 They arrive while evaluating trust: where secrets live, what happens if they lose a phone or a password, and whether “offline” is real or marketing.
 
@@ -20,11 +20,11 @@ They arrive while evaluating trust: where secrets live, what happens if they los
 
 This site is the public face of BitVault, a phone-local password manager for Android. Secrets live on the device. There is no account, no server, and no cloud sync in the app.
 
-Success: the offline model is unmistakable, then a clear path to install. The visitor should leave knowing what BitVault does, what it refuses to do, and how to get it onto a phone.
+Success: the offline model is unmistakable, the product value is desirable, and the visitor signs in to claim the free APK. After authentication they can optionally save an encrypted recovery key.
 
 ## Positioning
 
-BitVault is local-only. The app declares no `INTERNET` permission. Unlock is a master password (or fingerprint on this phone). Moving to another phone means copying one encrypted `.vault` backup — not signing into a vendor cloud.
+The BitVault Android app is local-only and declares no `INTERNET` permission. Unlock is a master password (or fingerprint on this phone). Moving to another phone means copying one encrypted `.vault` backup — not signing into a vendor cloud. A separate website account gates APK delivery, records downloads, and can hold an envelope-encrypted recovery key; it does not sync or contain the Android vault.
 
 A neighboring password manager that ships accounts, sync, or a backend cannot truthfully copy that claim.
 
@@ -45,9 +45,9 @@ Using or evaluating BitVault means these facts:
 
 **v1 app does not include:** iOS, desktop, or web app; cloud sync, accounts, or sharing; autofill, folders, tags, multiple vaults; breach checks; TOTP.
 
-**This site:** web landing page only. It does not implement vault features.
+**This site:** marketing landing page, Supabase authentication, gated APK redirect with download analytics, and optional envelope-encrypted recovery-key storage. It does not implement or sync vault contents.
 
-**Primary action:** GitHub release / APK download at https://github.com/omsaini-1441/bitvalut-landing-page/releases (repo `omsaini-1441/bitvalut-landing-page`). No Play Store listing.
+**Primary action:** sign in with Google or an email magic link, then download from the configured server-only APK destination. No Play Store listing.
 
 **Proof the page must earn:** mix of real v1 features and the no-internet fact. Offline plus easy-to-move (one encrypted file) is the point — especially in an age of scrape, breach, and sale.
 
@@ -55,7 +55,8 @@ Using or evaluating BitVault means these facts:
 
 - Name: **BitVault**. Organization in the Android package: `com.bonfire.vault` (Bonfire).
 - Voice in product docs the owner supplied: plain, precise, explicit about tradeoffs — including irreversible loss if password, recovery key, and backup are all gone. Do not soften that into a reversible “reset.”
-- Do not imply cloud, accounts, sync, email recovery, or an internet-connected backend.
+- Never imply that the Android app uses cloud accounts or sync. Website account and recovery escrow claims must be explicitly separated from the offline app.
+- Recovery escrow uses server-managed envelope encryption. Do not call it zero-knowledge; the server can decrypt after authenticated access.
 - Motion craft is binding: Framer Motion (and kin) at Awwwards-level ambition — orchestrated, not scattered hover. Motion serves the offline/portable-file story; it does not become crypto-hype or cloud-SaaS spectacle.
 
 ## Evidence on Hand
@@ -70,5 +71,5 @@ Using or evaluating BitVault means these facts:
 1. **Offline is a fact, not a mood.** No internet permission, no account, no Vault server — say it so a skeptic can verify the claim.
 2. **Name the lock and the escape hatch.** Master password is the real unlock; fingerprint is this phone only; recovery key is shown once; `.vault` is how you migrate.
 3. **Tradeoffs stay visible.** Irreversible loss without password, recovery key, or backup is part of the product, not a footnote to hide.
-4. **Explain first, then install.** The site earns the download by making the model clear, not by burying it under feature lists.
+4. **Sell the value, then verify access.** The page earns sign-in with clear proof and useful outcomes; it does not reproduce product documentation or expose the APK URL publicly.
 5. **Do not sell the missing roadmap.** v1 exclusions stay exclusions until the product changes.

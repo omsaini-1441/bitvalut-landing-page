@@ -1,17 +1,15 @@
-/**
- * Client-safe public config. Only NEXT_PUBLIC_* values live here.
- * Source of truth: `.env` / `.env.local` (see `.env.example`).
- */
-function required(name: string, value: string | undefined): string {
-  if (!value?.trim()) {
-    throw new Error(
-      `Missing ${name}. Copy .env.example to .env (and .env.local) then restart the server.`,
-    );
-  }
-  return value.trim();
+export type PublicSupabaseConfig = {
+  url: string;
+  anonKey: string;
+};
+
+export function getSiteUrl(): string {
+  return process.env.NEXT_PUBLIC_SITE_URL?.trim() || "http://localhost:3001";
 }
 
-export const publicEnv = {
-  siteUrl: required("NEXT_PUBLIC_SITE_URL", process.env.NEXT_PUBLIC_SITE_URL),
-  apkUrl: required("NEXT_PUBLIC_APK_URL", process.env.NEXT_PUBLIC_APK_URL),
-} as const;
+export function getPublicSupabaseConfig(): PublicSupabaseConfig | null {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
+  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
+
+  return url && anonKey ? { url, anonKey } : null;
+}

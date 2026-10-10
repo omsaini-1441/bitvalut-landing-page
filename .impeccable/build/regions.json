@@ -1,94 +1,22 @@
 {
   "regions": [
-    {
-      "id": "texture-ground",
-      "kind": "texture",
-      "grid": "A9:A9",
-      "note": "Clean sized-paper cream studio ground with no type, used as the tiled page field"
-    },
-    {
-      "id": "wordmark",
-      "kind": "text",
-      "grid": "A0:B0",
-      "note": "BITVAULT wordmark in bold dark indigo caps"
-    },
-    {
-      "id": "nav-apk",
-      "kind": "control",
-      "grid": "I0:J0",
-      "note": "GitHub mark plus GitHub APK text link"
-    },
-    {
-      "id": "drop-title",
-      "kind": "text",
-      "grid": "A1:C1",
-      "note": "DROP — Master password. small indigo caps"
-    },
-    {
-      "id": "drop-bath",
-      "kind": "plate",
-      "grid": "A2:C7",
-      "note": "Recessed square ebru tray: tan marbled bath, one solid indigo drop at center with concentric pale rings"
-    },
-    {
-      "id": "drop-caption",
-      "kind": "text",
-      "grid": "A8:C8",
-      "note": "Never stored."
-    },
-    {
-      "id": "comb-title",
-      "kind": "text",
-      "grid": "D1:F1",
-      "note": "COMB — Marbled waves. small indigo caps"
-    },
-    {
-      "id": "comb-waves",
-      "kind": "plate",
-      "grid": "D2:G9",
-      "note": "Vertical combed ebru waves in indigo, crimson, and green filling the center tray behind the type, including the lower tray field"
-    },
-    {
-      "id": "comb-headline",
-      "kind": "text",
-      "grid": "D3:F4",
-      "note": "BitVault stays on the phone. large bold type, last two words in green"
-    },
-    {
-      "id": "comb-deck",
-      "kind": "text",
-      "grid": "D6:F6",
-      "note": "No INTERNET permission. Fingerprint is this phone only."
-    },
-    {
-      "id": "lift-title",
-      "kind": "text",
-      "grid": "H1:J1",
-      "note": "LIFT — One file. Restore replaces. small indigo caps"
-    },
-    {
-      "id": "lift-sheet",
-      "kind": "plate",
-      "grid": "H2:J7",
-      "note": "Marbled sized sheet in the lift tray, bottom-left corner peeling up, pale ebru on cream"
-    },
-    {
-      "id": "lift-filename",
-      "kind": "text",
-      "grid": "H4:I4",
-      "note": ".vault in large bold indigo"
-    },
-    {
-      "id": "lift-cta",
-      "kind": "control",
-      "grid": "H6:I7",
-      "note": "Crimson Get the APK button with download glyph"
-    },
-    {
-      "id": "lift-caption",
-      "kind": "text",
-      "grid": "H8:J8",
-      "note": "Restore replaces."
-    }
+    { "id": "nav-rule", "kind": "chrome", "grid": "A0:J0", "note": "thin navigation strip and bottom rule on white security stock" },
+    { "id": "wordmark", "kind": "text", "grid": "A0:B0", "note": "BITVAULT wordmark with small geometric seal" },
+    { "id": "nav-links", "kind": "text", "grid": "E0:G0", "note": "How it protects and Recovery navigation links" },
+    { "id": "sign-in", "kind": "control", "grid": "I0:J0", "note": "Sign in control with shield mark" },
+    { "id": "headline", "kind": "text", "grid": "A2:D3", "note": "large two-line headline Passwords with nowhere to leak" },
+    { "id": "hero-deck", "kind": "text", "grid": "A4:D4", "note": "two-line Android phone and no internet permission explanation" },
+    { "id": "primary-cta", "kind": "control", "grid": "A5:B5", "note": "cobalt Get BitVault free button" },
+    { "id": "secondary-cta", "kind": "control", "grid": "C5:D5", "note": "underlined See how it works link" },
+    { "id": "certificate-shell", "kind": "chrome", "grid": "E1:J6", "container": true, "note": "white access-pass shell with fine navy rule and perforated divider" },
+    { "id": "seal-plate", "kind": "plate", "grid": "E1:H6", "note": "engraved metallic B seal carried by cobalt guilloche waves and manifest verification stamp" },
+    { "id": "claim-label", "kind": "text", "grid": "I1:J1", "note": "CLAIM FREE ACCESS label with short vermilion rule" },
+    { "id": "auth-options", "kind": "text", "grid": "I2:J3", "note": "Continue with Google and or with email choices" },
+    { "id": "stub-cta", "kind": "control", "grid": "I4:J4", "note": "vermilion GET BITVAULT FREE action" },
+    { "id": "serial-block", "kind": "text", "grid": "I5:J6", "note": "serial BV-000001 and barcode block" },
+    { "id": "proof-band", "kind": "chrome", "grid": "A7:J9", "container": true, "note": "deep navy transition band" },
+    { "id": "proof-title", "kind": "text", "grid": "A8:E8", "note": "large white statement Your vault is not an account" },
+    { "id": "proof-copy", "kind": "text", "grid": "A9:E9", "note": "local Android vault and optional web recovery account explanation" },
+    { "id": "proof-guilloche", "kind": "plate", "grid": "F7:J9", "bleed": true, "note": "subtle cobalt guilloche line field intentionally cropped by the navy band" }
   ]
 }
