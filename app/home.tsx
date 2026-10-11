@@ -2,9 +2,12 @@
 
 import sealPlate from "@/assets/plates/seal-plate.png";
 import proofGuilloche from "@/assets/plates/proof-guilloche.png";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
+const scrapeLine =
+  "AI agents scrape · crawl · index · train · resell · scrape · crawl · index · train · resell · ";
 
 function SealMark() {
   return (
@@ -20,6 +23,49 @@ function Arrow() {
     <svg viewBox="0 0 20 20" aria-hidden="true">
       <path d="M3 10h13M11 5l5 5-5 5" />
     </svg>
+  );
+}
+
+function ScrapeAgents() {
+  const reduce = useReducedMotion();
+
+  return (
+    <div className="scrape-field" aria-hidden="true">
+      {[0, 1, 2, 3, 4].map((lane) => (
+        <motion.i
+          key={lane}
+          className="scrape-agent"
+          style={{ top: `${18 + lane * 16}%` }}
+          animate={
+            reduce
+              ? undefined
+              : { left: ["-12%", "108%"], opacity: [0, 1, 1, 0] }
+          }
+          transition={{
+            duration: 9 + lane * 1.6,
+            repeat: Infinity,
+            ease: "linear",
+            delay: lane * 1.1,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
+function ScrapeTicker() {
+  const reduce = useReducedMotion();
+
+  return (
+    <div className="scrape-ticker" aria-hidden="true">
+      <motion.p
+        animate={reduce ? undefined : { x: ["0%", "-50%"] }}
+        transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+      >
+        {scrapeLine}
+        {scrapeLine}
+      </motion.p>
+    </div>
   );
 }
 
@@ -42,6 +88,7 @@ export default function Home() {
       </header>
 
       <section className="hero" aria-labelledby="hero-title">
+        <ScrapeAgents />
         <motion.div className="hero-copy">
           <h1 id="hero-title" className="r-headline">
             Passwords with
@@ -49,19 +96,11 @@ export default function Home() {
             nowhere to leak.
           </h1>
           <p className="hero-deck r-hero-deck">
-            BitVault keeps your logins on your Android phone.{" "}
-            <br />
-            The app requests no internet permission.
+            In the AI era, agents roam and scrape the internet like nothing
+            before it. Keep your logins off the grid — on your Android phone,
+            with no internet permission.
           </p>
-          <div className="hero-actions">
-            <Link className="button button-primary r-primary-cta" href="/login">
-              Get BitVault free
-              <Arrow />
-            </Link>
-            <a className="text-link r-secondary-cta" href="#protection">
-              See how it works
-            </a>
-          </div>
+          <ScrapeTicker />
         </motion.div>
 
         <motion.div className="access-pass r-certificate-shell">
@@ -205,7 +244,7 @@ export default function Home() {
           <span>BitVault</span>
         </Link>
         <p>Local vault. Optional web recovery. No cloud sync.</p>
-        <span>Bonfire · Android</span>
+        <span>Android only</span>
       </footer>
     </main>
   );
