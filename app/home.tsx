@@ -211,7 +211,7 @@ export default function Home() {
             service.
           </p>
         </div>
-        <Link className="button recovery-action" href="/login?next=/account/recovery">
+        <Link className="button recovery-action" href="/login?next=/account">
           Protect my recovery key
           <Arrow />
         </Link>

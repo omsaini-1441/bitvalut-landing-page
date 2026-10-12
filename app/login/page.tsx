@@ -14,13 +14,13 @@ export const metadata: Metadata = {
 function safeNext(value: string | undefined) {
   return value?.startsWith("/") && !value.startsWith("//")
     ? value
-    : "/download";
+    : "/account";
 }
 
 export default async function LoginPage({
   searchParams,
 }: {
-  searchParams: Promise<{ next?: string; error?: string }>;
+  searchParams: Promise<{ next?: string; error?: string; detail?: string }>;
 }) {
   const params = await searchParams;
   const nextPath = safeNext(params.next);
@@ -36,9 +36,10 @@ export default async function LoginPage({
           <span className="document-serial">Access document · BV-FREE</span>
           <h1>Claim your free copy.</h1>
           <p>
-            Sign in before downloading BitVault. Your account records the
-            download and gives you an optional place to protect your recovery
-            key. It does not sync or contain your Android vault.
+            Sign in with a password before downloading BitVault. No inbox
+            check is required. Your account records the download and gives you
+            an optional place to protect your recovery key. It does not sync
+            or contain your Android vault.
           </p>
           <ul>
             <li>Free APK access</li>
@@ -50,7 +51,8 @@ export default async function LoginPage({
           <p className="claim-label">Verify access</p>
           {params.error ? (
             <p className="auth-message auth-message-error">
-              Sign-in could not be completed. Please try again.
+              {params.detail ||
+                "Sign-in could not be completed. Please try again."}
             </p>
           ) : null}
           <LoginForm

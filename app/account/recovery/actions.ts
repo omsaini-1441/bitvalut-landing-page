@@ -75,10 +75,10 @@ export async function saveRecoveryKey(
     };
   }
 
-  revalidatePath("/account/recovery");
+  revalidatePath("/account");
   return {
     status: "success",
-    message: "Recovery key encrypted and saved.",
+    message: "Saved. Only this signed-in account can open it.",
   };
 }
 
@@ -161,6 +161,6 @@ export async function deleteRecoveryKey(
   if (error) {
     return { status: "error", message: "The key could not be deleted." };
   }
-  revalidatePath("/account/recovery");
+  revalidatePath("/account");
   return { status: "success", message: "Saved recovery key deleted." };
 }

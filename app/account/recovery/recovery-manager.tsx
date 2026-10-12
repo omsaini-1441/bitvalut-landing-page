@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { ChangeEvent, useActionState, useState } from "react";
 import {
   deleteRecoveryKey,
   revealRecoveryKey,
@@ -46,6 +46,20 @@ export default function RecoveryManager({
     initialState,
   );
   const [copied, setCopied] = useState(false);
+  const [keyText, setKeyText] = useState("");
+  const [fileNote, setFileNote] = useState("");
+
+  async function readKeyFile(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    const text = (await file.text()).trim();
+    if (text.length < 16) {
+      setFileNote("That file does not contain a recovery key.");
+      return;
+    }
+    setKeyText(text.slice(0, 512));
+    setFileNote(file.name);
+  }
 
   if (!configured) {
     return (
@@ -59,7 +73,7 @@ export default function RecoveryManager({
   if (mode === "save") {
     return (
       <form action={saveAction} className="recovery-form">
-        <label htmlFor="recoveryKey">Recovery key</label>
+        <label htmlFor="recoveryKey">Recovery key from the app</label>
         <textarea
           id="recoveryKey"
           name="recoveryKey"
@@ -69,8 +83,26 @@ export default function RecoveryManager({
           maxLength={512}
           autoComplete="off"
           spellCheck={false}
-          placeholder="Paste the complete recovery key shown by BitVault"
+          placeholder="Paste the key BitVault showed during setup"
+          value={keyText}
+          onChange={(event) => setKeyText(event.target.value)}
         />
+        <label className="file-key" htmlFor="recovery-file">
+          Or choose the text file you saved
+          <input
+            id="recovery-file"
+            type="file"
+            accept=".txt,.key,text/plain"
+            onChange={readKeyFile}
+          />
+        </label>
+        {fileNote ? (
+          <p
+            className={`auth-message ${fileNote.startsWith("That file") ? "auth-message-error" : ""}`}
+          >
+            {fileNote}
+          </p>
+        ) : null}
         <label htmlFor="save-confirmation">
           Type <strong>SAVE</strong> to confirm
         </label>
@@ -82,7 +114,7 @@ export default function RecoveryManager({
         />
         <div className="form-actions">
           <button className="button button-primary" disabled={saving}>
-            {saving ? "Encrypting…" : hasKey ? "Replace saved key" : "Encrypt and save"}
+            {saving ? "Encrypting…" : hasKey ? "Replace saved key" : "Save to this account"}
           </button>
           {hasKey ? (
             <button

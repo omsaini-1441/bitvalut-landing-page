@@ -946,7 +946,16 @@ a {
   background: var(--silver);
 }
 
-.login-controls label,
+.login-controls form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.login-controls form .auth-footnote {
+  margin-top: 0.25rem;
+  padding-top: 0;
+  border-top: 0;
+}
 .recovery-form label {
   display: block;
   margin-bottom: 0.55rem;
@@ -1056,6 +1065,34 @@ a {
     var(--ink) 4px 5px,
     transparent 5px 9px
   );
+}
+
+.account-page .recovery-console,
+.account-page .download-pass {
+  min-height: 0;
+}
+
+.account-recovery {
+  margin-top: 2rem;
+}
+
+.account-recovery h2 {
+  margin: 1.25rem 0 1rem;
+  max-width: 14ch;
+  font-family: var(--font-label), sans-serif;
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+
+.file-key {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.4rem;
+}
+
+.file-key input {
+  font-size: 0.9rem;
 }
 
 .download-next {

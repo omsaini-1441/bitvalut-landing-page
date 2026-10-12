@@ -21,7 +21,7 @@ export async function GET(request: Request) {
 
   if (!user) {
     const loginUrl = new URL("/login", request.url);
-    loginUrl.searchParams.set("next", "/download");
+    loginUrl.searchParams.set("next", "/account");
     return NextResponse.redirect(loginUrl);
   }
 

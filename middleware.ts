@@ -3,6 +3,17 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
 export async function middleware(request: NextRequest) {
+  const code = request.nextUrl.searchParams.get("code");
+  if (code && request.nextUrl.pathname !== "/auth/callback") {
+    const callback = request.nextUrl.clone();
+    callback.pathname = "/auth/callback";
+    return NextResponse.redirect(callback);
+  }
+
+  if (request.nextUrl.pathname === "/auth/callback") {
+    return NextResponse.next();
+  }
+
   const config = getPublicSupabaseConfig();
   if (!config) return NextResponse.next();
 

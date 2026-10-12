@@ -1,5 +1,6 @@
 "use client";
 
+import { createConfirmedAccount } from "./actions";
 import { createClient } from "@/lib/supabase/client";
 import { FormEvent, useState } from "react";
 
@@ -11,44 +12,74 @@ export default function LoginForm({
   configured: boolean;
 }) {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">(
-    "idle",
-  );
+  const [password, setPassword] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [message, setMessage] = useState("");
 
-  const callbackUrl = () =>
-    `${window.location.origin}/auth/callback?next=${encodeURIComponent(nextPath)}`;
+  const callbackUrl = () => {
+    document.cookie = `bv-next=${encodeURIComponent(nextPath)}; Path=/; Max-Age=600; SameSite=Lax`;
+    return `${window.location.origin}/auth/callback`;
+  };
 
   async function signInWithGoogle() {
     const supabase = createClient();
     if (!supabase) return;
     setStatus("loading");
-    const { error } = await supabase.auth.signInWithOAuth({
+    setMessage("");
+    const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
-      options: { redirectTo: callbackUrl() },
+      options: {
+        redirectTo: callbackUrl(),
+        skipBrowserRedirect: true,
+      },
     });
-    if (error) {
+    if (error || !data.url) {
       setStatus("error");
-      setMessage(error.message);
+      setMessage(error?.message ?? "Google sign-in did not start.");
+      return;
     }
+    window.location.assign(data.url);
   }
 
-  async function sendMagicLink(event: FormEvent<HTMLFormElement>) {
+  async function signInWithPassword(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const supabase = createClient();
     if (!supabase) return;
     setStatus("loading");
-    const { error } = await supabase.auth.signInWithOtp({
-      email,
-      options: { emailRedirectTo: callbackUrl() },
+    setMessage("");
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password,
     });
     if (error) {
       setStatus("error");
-      setMessage(error.message);
+      setMessage("That email and password did not match an account.");
       return;
     }
-    setStatus("sent");
-    setMessage("Check your inbox. Your secure sign-in link is on its way.");
+    window.location.assign(nextPath);
+  }
+
+  async function createAccount() {
+    const supabase = createClient();
+    if (!supabase) return;
+    setStatus("loading");
+    setMessage("");
+    const created = await createConfirmedAccount(email, password);
+    if (!created.ok) {
+      setStatus("error");
+      setMessage(created.message);
+      return;
+    }
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password,
+    });
+    if (error) {
+      setStatus("error");
+      setMessage("The account was created, but sign-in did not finish. Try Sign in.");
+      return;
+    }
+    window.location.assign(nextPath);
   }
 
   if (!configured) {
@@ -72,25 +103,48 @@ export default function LoginForm({
         Continue with Google
       </button>
       <div className="auth-divider">
-        <span>or use email</span>
+        <span>or use a password</span>
       </div>
-      <form onSubmit={sendMagicLink}>
+      <form onSubmit={signInWithPassword}>
         <label htmlFor="email">Email address</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autoComplete="email"
+          required
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          placeholder="you@example.com"
+        />
+        <label htmlFor="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autoComplete="current-password"
+          required
+          minLength={8}
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          placeholder="At least 8 characters"
+        />
         <div className="email-row">
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            required
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            placeholder="you@example.com"
-          />
           <button className="button button-stamp" disabled={status === "loading"}>
-            {status === "loading" ? "Sending…" : "Email me a link"}
+            {status === "loading" ? "Working…" : "Sign in"}
+          </button>
+          <button
+            className="button button-primary"
+            type="button"
+            disabled={status === "loading"}
+            onClick={createAccount}
+          >
+            Create account
           </button>
         </div>
+        <p className="auth-footnote">
+          No email is sent. The password is what opens this website account.
+        </p>
       </form>
       {message ? (
         <p
