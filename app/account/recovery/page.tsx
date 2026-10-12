@@ -1,8 +1,15 @@
+import { SiteFooter } from "@/components/site-footer";
 import { getServerConfig } from "@/lib/env.server";
 import { createClient } from "@/lib/supabase/server";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import RecoveryManager from "./recovery-manager";
+
+export const metadata: Metadata = {
+  title: "Recovery key",
+  robots: { index: false, follow: false },
+};
 
 export default async function RecoveryPage() {
   const supabase = await createClient();
@@ -22,6 +29,7 @@ export default async function RecoveryPage() {
   const configured = Boolean(supabase && getServerConfig() && user);
 
   return (
+    <div className="document-shell">
     <main className="account-page recovery-account-page">
       <header className="account-nav">
         <Link href="/" className="auth-wordmark">
@@ -44,7 +52,8 @@ export default async function RecoveryPage() {
             <p>
               This is server-managed encryption, not zero-knowledge storage.
               BitVault&apos;s server can decrypt the key after you authenticate.
-              Keep an offline copy too.
+              Keep an offline copy too. Details are in the{" "}
+              <Link href="/privacy">privacy policy</Link>.
             </p>
           </div>
         </div>
@@ -60,5 +69,7 @@ export default async function RecoveryPage() {
         </div>
       </section>
     </main>
+    <SiteFooter />
+    </div>
   );
 }

@@ -1,6 +1,15 @@
+import { SiteFooter } from "@/components/site-footer";
 import LoginForm from "./login-form";
 import { getPublicSupabaseConfig } from "@/lib/env";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Sign in",
+  description:
+    "Sign in to download BitVault for Android. The website account does not sync the vault.",
+  alternates: { canonical: "/login" },
+};
 
 function safeNext(value: string | undefined) {
   return value?.startsWith("/") && !value.startsWith("//")
@@ -17,6 +26,7 @@ export default async function LoginPage({
   const nextPath = safeNext(params.next);
 
   return (
+    <div className="document-shell">
     <main className="auth-page">
       <Link className="auth-wordmark" href="/">
         BitVault
@@ -48,11 +58,15 @@ export default async function LoginPage({
             configured={Boolean(getPublicSupabaseConfig())}
           />
           <p className="auth-footnote">
-            By continuing, you create a website account. The BitVault Android
-            app remains offline and does not sign in to this account.
+            By continuing, you agree to the <Link href="/terms">Terms</Link>{" "}
+            and acknowledge the <Link href="/privacy">Privacy policy</Link>.
+            This creates a website account only. The Android app stays offline
+            and does not sign in here.
           </p>
         </div>
       </section>
     </main>
+    <SiteFooter />
+    </div>
   );
 }

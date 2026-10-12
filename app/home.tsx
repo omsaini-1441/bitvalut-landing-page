@@ -3,6 +3,7 @@
 import sealPlate from "@/assets/plates/seal-plate.png";
 import proofGuilloche from "@/assets/plates/proof-guilloche.png";
 import { motion, useReducedMotion } from "framer-motion";
+import { SiteFooter } from "@/components/site-footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -238,14 +239,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <footer className="site-footer">
-        <Link className="brand footer-brand" href="/">
-          <SealMark />
-          <span>BitVault</span>
-        </Link>
-        <p>Local vault. Optional web recovery. No cloud sync.</p>
-        <span>Android only</span>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

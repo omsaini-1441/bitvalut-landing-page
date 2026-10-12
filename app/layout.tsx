@@ -1,3 +1,4 @@
+import { getSiteUrl } from "@/lib/env";
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Gurajada } from "next/font/google";
 import "./globals.css";
@@ -23,10 +24,25 @@ const display = Gurajada({
   display: "swap",
 });
 
+const description =
+  "An Android password manager with no internet permission. Keep logins local, move them in one encrypted vault file, and protect your recovery key.";
+
 export const metadata: Metadata = {
-  title: "BitVault — passwords with nowhere to leak",
-  description:
-    "An Android password manager with no internet permission. Keep logins local, move them in one encrypted vault file, and protect your recovery key.",
+  metadataBase: new URL(getSiteUrl()),
+  title: {
+    default: "BitVault — passwords with nowhere to leak",
+    template: "%s — BitVault",
+  },
+  description,
+  applicationName: "BitVault",
+  openGraph: {
+    title: "BitVault — passwords with nowhere to leak",
+    description,
+    siteName: "BitVault",
+    type: "website",
+    locale: "en_US",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

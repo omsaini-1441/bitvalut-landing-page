@@ -1,7 +1,14 @@
+import { SiteFooter } from "@/components/site-footer";
 import { getServerConfig } from "@/lib/env.server";
 import { createClient } from "@/lib/supabase/server";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "Download",
+  robots: { index: false, follow: false },
+};
 
 export default async function DownloadPage() {
   const supabase = await createClient();
@@ -11,6 +18,7 @@ export default async function DownloadPage() {
   if (supabase && !user) redirect("/login?next=/download");
 
   return (
+    <div className="document-shell">
     <main className="account-page">
       <header className="account-nav">
         <Link href="/" className="auth-wordmark">
@@ -62,5 +70,7 @@ export default async function DownloadPage() {
         </Link>
       </section>
     </main>
+    <SiteFooter />
+    </div>
   );
 }
