@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   },
   description,
   applicationName: "BitVault",
+  verification: {
+    google: "qlbvpUGbSsnmwoitNM22KxBLPogR6aJL4oWn3DXVyL4",
+  },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
