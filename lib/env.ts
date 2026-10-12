@@ -4,7 +4,15 @@ export type PublicSupabaseConfig = {
 };
 
 export function getSiteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL?.trim() || "http://localhost:3001";
+  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");
+  if (configured && !configured.includes("localhost")) return configured;
+
+  const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
+  if (productionHost) {
+    return `https://${productionHost.replace(/^https?:\/\//, "")}`;
+  }
+
+  return configured || "http://localhost:3001";
 }
 
 export function getPublicSupabaseConfig(): PublicSupabaseConfig | null {

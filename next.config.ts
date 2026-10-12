@@ -21,7 +21,16 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      { source: "/account/:path*", headers: noindex },
+      { source: "/account", headers: noindex },
+      { source: "/download", headers: noindex },
+      { source: "/login", headers: noindex },
+      { source: "/api/:path*", headers: noindex },
+      { source: "/auth/:path*", headers: noindex },
+    ];
   },
   async redirects() {
     return [

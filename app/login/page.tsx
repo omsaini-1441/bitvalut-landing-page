@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Sign in to download BitVault for Android. The website account does not sync the vault.",
   alternates: { canonical: "/login" },
+  robots: { index: false, follow: false },
 };
 
 function safeNext(value: string | undefined) {

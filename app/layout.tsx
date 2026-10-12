@@ -63,6 +63,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "BitVault — passwords with nowhere to leak",
+    description,
+    images: ["/og.png"],
+  },
   robots: { index: true, follow: true },
 };
 
