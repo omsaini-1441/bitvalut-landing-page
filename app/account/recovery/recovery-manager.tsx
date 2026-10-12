@@ -111,7 +111,7 @@ export default function RecoveryManager({
         </label>
         <input id="delete-confirmation" name="confirmation" required />
         <div className="form-actions">
-          <button className="button button-stamp" disabled={deleting}>
+          <button className="button button-alarm" disabled={deleting}>
             {deleting ? "Deleting…" : "Delete saved key"}
           </button>
           <button

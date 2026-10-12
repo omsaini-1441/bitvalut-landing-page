@@ -1,23 +1,12 @@
 "use client";
 
-import sealPlate from "@/assets/plates/seal-plate.png";
-import proofGuilloche from "@/assets/plates/proof-guilloche.png";
-import { motion, useReducedMotion } from "framer-motion";
+import { BrandMark } from "@/components/brand-mark";
 import { SiteFooter } from "@/components/site-footer";
-import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 
 const scrapeLine =
   "AI agents scrape · crawl · index · train · resell · scrape · crawl · index · train · resell · ";
-
-function SealMark() {
-  return (
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-      <path d="M16 2 29 9v14l-13 7L3 23V9L16 2Z" />
-      <path d="m16 8 7 4v8l-7 4-7-4v-8l7-4Z" />
-    </svg>
-  );
-}
 
 function Arrow() {
   return (
@@ -75,7 +64,7 @@ export default function Home() {
     <main className="landing">
       <header className="site-nav r-nav-rule">
         <Link className="brand r-wordmark" href="/" aria-label="BitVault home">
-          <SealMark />
+          <BrandMark />
           <span>BitVault</span>
         </Link>
         <nav className="nav-links r-nav-links" aria-label="Primary navigation">
@@ -84,13 +73,13 @@ export default function Home() {
         </nav>
         <Link className="sign-in r-sign-in" href="/login">
           Sign in
-          <SealMark />
+          <BrandMark />
         </Link>
       </header>
 
       <section className="hero" aria-labelledby="hero-title">
         <ScrapeAgents />
-        <motion.div className="hero-copy">
+        <div className="hero-copy">
           <h1 id="hero-title" className="r-headline">
             Passwords with
             <br />
@@ -102,15 +91,14 @@ export default function Home() {
             with no internet permission.
           </p>
           <ScrapeTicker />
-        </motion.div>
+        </div>
 
-        <motion.div className="access-pass r-certificate-shell">
+        <div className="access-pass r-certificate-shell">
           <div className="pass-art">
-            <Image
+            <img
               className="seal-plate r-seal-plate"
-              src={sealPlate}
-              alt="Engraved BitVault seal surrounded by security linework"
-              priority
+              src="/brand/seal.svg"
+              alt="Engraved BitVault seal. The vault stays on the phone, with no internet permission."
             />
           </div>
           <div className="claim-stub">
@@ -133,13 +121,13 @@ export default function Home() {
               <i />
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       <section className="proof-intro r-proof-band" id="protection">
-        <Image
+        <img
           className="proof-guilloche r-proof-guilloche"
-          src={proofGuilloche}
+          src="/brand/trust-waves.svg"
           alt=""
         />
         <div className="proof-intro-copy">
@@ -211,7 +199,7 @@ export default function Home() {
 
       <section className="recovery-section" id="recovery">
         <div className="recovery-seal" aria-hidden="true">
-          <SealMark />
+          <BrandMark />
           <span>Optional web recovery</span>
         </div>
         <div>

@@ -2,12 +2,15 @@
 name: BitVault
 description: Security-document landing system for an offline Android vault
 colors:
-  stock: "#f7f7f7"
-  navy: "#08183d"
-  cobalt: "#0847c8"
-  vermilion: "#ba2818"
-  silver: "#c7c8ce"
-  ink: "#0f131c"
+  ivory: "#F7F7F4"
+  navy: "#0B1B42"
+  navyDeep: "#07142F"
+  cobalt: "#315DA8"
+  steel: "#7894BE"
+  silver: "#C4C8CC"
+  graphite: "#303744"
+  inkMuted: "#5D6573"
+  alarm: "#8E2F24"
 typography:
   display:
     fontFamily: "Barlow Condensed, sans-serif"
@@ -40,7 +43,13 @@ components:
     padding: "0 1.25rem"
     height: "3.35rem"
   button-stamp:
-    backgroundColor: "{colors.vermilion}"
+    backgroundColor: "{colors.cobalt}"
+    textColor: "#ffffff"
+    rounded: "{rounded.none}"
+    padding: "0 1.25rem"
+    height: "3.35rem"
+  button-alarm:
+    backgroundColor: "{colors.alarm}"
     textColor: "#ffffff"
     rounded: "{rounded.none}"
     padding: "0 1.25rem"
@@ -53,36 +62,37 @@ components:
 
 **Creative North Star: "The Security Document Atelier"**
 
-BitVault’s public surfaces read like anti-counterfeit paper: cotton-white stock, midnight navy fields, cobalt guilloché, and one vermilion stamp. The system sells verification, not SaaS polish. Headlines carry the offer; serial marks and perforated stubs carry the proof.
+BitVault’s public surfaces read like an engraved security document: warm ivory stock, midnight navy fields, cobalt linework, and machined silver. The mark is a geometric BV monogram in an octagonal vault plate. Headlines carry the offer; serial marks and perforated stubs carry the proof.
 
 **Key Characteristics:**
 - Square-cornered documents, not rounded product cards
-- One cobalt action and one vermilion claim stamp
-- Engineered condensed labels for serials and navigation
+- Cobalt for access. Alarm red only for destructive confirmation
+- Engineered condensed labels for navigation, mono for serial numbers
 - Guilloché as atmosphere, never as the message
 
 ## Colors
 
-The palette is paper, ink, and two security inks.
+Ivory and navy carry the page. Cobalt is the only brand accent. Silver is for metal and rules. Full usage, contrast, and file paths are in `BRAND.md`.
 
 ### Primary
-- **Cobalt** (`#0847c8`): the free-access action and verification field.
+- **Vault cobalt** (`#315DA8`): actions, links, and the emblem ring.
 
-### Secondary
-- **Vermilion** (`#ba2818`): the claim stub and recovery danger actions.
+### Neutrals
+- **Paper ivory** (`#F7F7F4`): page ground.
+- **Midnight navy** (`#0B1B42`): proof bands, footer, and body ink.
+- **Deep navy** (`#07142F`): the darkest field.
+- **Machined silver** (`#C4C8CC`): rules and metallic emblem detail.
+- **Steel** (`#7894BE`): fine linework only, not body text.
+- **Graphite** (`#303744`) and **muted ink** (`#5D6573`): secondary text.
 
-### Neutral
-- **Stock** (`#f7f7f7`): page ground.
-- **Navy** (`#08183d`): proof bands, closing fields, and body ink.
-- **Silver** (`#c7c8ce`): rules, perforations, and quiet borders.
-
-**The Two-Ink Rule.** Cobalt grants access. Vermilion claims or warns. No third accent.
+### Functional
+- **Alarm** (`#8E2F24`): delete and error states only. Not a marketing color.
 
 ## Typography
 
-**Display Font:** Barlow Condensed
-**Body Font:** Barlow
-**Label Font:** Barlow Condensed
+**Headline and wordmark:** Barlow and Barlow Condensed
+**Body:** Barlow
+**Serials:** IBM Plex Mono
 
 Condensed grotesk display does the selling. Regular Barlow explains. Labels stay uppercase and tracked.
 
@@ -112,7 +122,7 @@ Corners stay square. Circles are reserved for seals and verification stamps. Per
 ### Buttons
 - **Shape:** square, 3.35rem tall
 - **Primary:** cobalt fill, white label
-- **Stamp:** vermilion fill for claim and delete actions
+- **Stamp:** cobalt fill for claim actions. Alarm fill for delete only.
 
 ### Cards / Containers
 - Access passes and login certificates are white documents with a dotted stub.
