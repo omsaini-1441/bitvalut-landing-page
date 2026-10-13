@@ -22,7 +22,7 @@ const agentCrawlers = [
 
 export default function robots(): MetadataRoute.Robots {
   const rule = {
-    allow: ["/", "/llms.txt"],
+    allow: ["/sitemap.xml", "/robots.txt", "/llms.txt", "/"],
     disallow: privatePaths,
   };
 
