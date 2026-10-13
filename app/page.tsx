@@ -5,9 +5,11 @@ import type { Metadata } from "next";
 const description =
   "An Android password manager with no internet permission. Keep logins local, move them in one encrypted vault file, and protect your recovery key.";
 
+const site = getSiteUrl().replace(/\/$/, "");
+
 export const metadata: Metadata = {
   alternates: {
-    canonical: "/",
+    canonical: `${site}/`,
     types: {
       "text/plain": "/llms.txt",
     },
@@ -16,7 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const site = getSiteUrl().replace(/\/$/, "");
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
